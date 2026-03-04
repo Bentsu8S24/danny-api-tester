@@ -1,0 +1,15 @@
+meta {
+  name: 1. get cfo auditor
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{big-data_dev}}/auditor/cfo/13
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

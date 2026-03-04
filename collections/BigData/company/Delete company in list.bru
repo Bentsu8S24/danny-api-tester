@@ -1,0 +1,21 @@
+meta {
+  name: Delete company in list
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{bigdata-api-dev}}/company/delete-company
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "taxId": "0105553145553"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

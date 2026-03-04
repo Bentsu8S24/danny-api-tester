@@ -1,0 +1,22 @@
+meta {
+  name: Financial Ratios
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/financial/financial-calculate?company_tax_id=0105553145553&project_id=112&company_id=35&year=2024
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+  project_id: 112
+  company_id: 35
+  year: 2024
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: scope dropdown list
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{big-data_local}}/scope-dropdown?companyId=12
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 12
+}
+
+settings {
+  encodeUrl: true
+}

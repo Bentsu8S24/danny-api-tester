@@ -1,0 +1,20 @@
+meta {
+  name: get all charts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{big-data_dev}}/auditor/project/107/verify?companyId=8&year=2024
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 8
+  year: 2024
+}
+
+settings {
+  encodeUrl: true
+}

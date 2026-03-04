@@ -1,0 +1,15 @@
+meta {
+  name: Soft delete image data (non file)
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{bigdata-api-dev}}/auditor/station-image/delete/019bb59f-67b1-7af3-989d-e3da534c415c
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

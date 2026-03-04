@@ -1,0 +1,23 @@
+meta {
+  name: get station location
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{big-data_dev}}/auditor/project/23/station?companyId=23
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 23
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

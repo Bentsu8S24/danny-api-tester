@@ -1,0 +1,27 @@
+meta {
+  name: Upload Files
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{bigdata-api-dev}}/api/accounting/upload?company_tax_id=0105553145553
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+body:multipart-form {
+  files: @file(/Users/bentleyvenkin/Downloads/pdf/งบการเงิน 2565.pdf)
+}
+
+settings {
+  encodeUrl: true
+}

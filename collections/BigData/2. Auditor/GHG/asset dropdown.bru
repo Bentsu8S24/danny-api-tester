@@ -1,0 +1,19 @@
+meta {
+  name: asset dropdown
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{big-data_local}}/asset-dropdown?companyId=12
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 12
+}
+
+settings {
+  encodeUrl: true
+}

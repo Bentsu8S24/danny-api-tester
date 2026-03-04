@@ -1,0 +1,15 @@
+meta {
+  name: Get image list for company
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{bigdata-api-dev}}/auditor/station-image/company/0105553145553
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,31 @@
+meta {
+  name: Update canvas info
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{bigdata-api-dev}}/api/canvas/update/39
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  impact_on_sdgs_list: 1,2,3
+  ~sustainable_partnership: 
+  ~sustainable_operations: 
+  ~sustainable_resources: 
+  ~sustainable_engagement: 
+  ~sustainable_value_proposition: 
+  ~sustainable_distribution: 
+  ~impactful_customer_segments: 
+  ~esg_metric_and_reporting: 
+  ~impact_on_sdgs: 
+  ~esg_risk_management: 
+  ~sustainable_investments: 
+  ~sustainable_revenue: 
+}
+
+settings {
+  encodeUrl: true
+}

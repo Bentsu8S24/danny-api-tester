@@ -1,0 +1,28 @@
+meta {
+  name: BigData
+}
+
+auth {
+  mode: none
+}
+
+vars:pre-request {
+  bigdata-api-dev: 
+  cookie_demp: 
+  localhost3002: 
+  bigdata-api-prod: 
+}
+
+script:pre-request {
+  const csrftoken = bru.getVar('cookie_demp');
+  if (csrftoken) {
+      req.getHeaders().upsert({ key: 'cookies', value: csrftoken });
+  } else {
+      // Optionally remove the header if variable is missing
+      req.getHeaders().remove('cookies');
+  }
+}
+
+docs {
+  All API in this collection required cookies in the headers, for postman testing, we autoset the cookies after login
+}

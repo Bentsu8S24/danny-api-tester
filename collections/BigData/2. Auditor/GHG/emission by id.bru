@@ -1,0 +1,19 @@
+meta {
+  name: emission by id
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{big-data_local}}/emission/166521?companyId=12
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 12
+}
+
+settings {
+  encodeUrl: true
+}

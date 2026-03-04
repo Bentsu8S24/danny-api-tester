@@ -1,0 +1,19 @@
+meta {
+  name: Income & Expenses
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{big-data_dev}}/api/company-pp30/?company_tax_id=0105553145553
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+settings {
+  encodeUrl: true
+}

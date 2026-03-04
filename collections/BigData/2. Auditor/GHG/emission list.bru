@@ -1,0 +1,23 @@
+meta {
+  name: emission list
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{big-data_dev}}/emission-list?page=1&rowPerPage=20&companyId=233&startDate=2024-10-14T13%3A41%3A20.318Z&endDate=2025-10-14T13%3A41%3A20.318Z
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  rowPerPage: 20
+  companyId: 233
+  startDate: 2024-10-14T13%3A41%3A20.318Z
+  endDate: 2025-10-14T13%3A41%3A20.318Z
+}
+
+settings {
+  encodeUrl: true
+}

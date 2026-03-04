@@ -1,0 +1,21 @@
+meta {
+  name: add project overview (upload 2 file)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{big-data_dev}}/auditor/project
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  companyId: 1
+  monitoring_report: @file(/Users/chutipontipmanee/Downloads/AI-Auditor/Test-Ai/Monitoring Report (MR).pdf)
+  validation_report: @file(/Users/chutipontipmanee/Downloads/AI-Auditor/Test-Ai/Validation Report.pdf)
+}
+
+settings {
+  encodeUrl: true
+}

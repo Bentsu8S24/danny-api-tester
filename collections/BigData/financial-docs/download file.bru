@@ -1,0 +1,19 @@
+meta {
+  name: download file
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/financial-documents/download/613eb671-c65f-4af2-af0a-27eedb6570e0?company_id=39
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 39
+}
+
+settings {
+  encodeUrl: true
+}

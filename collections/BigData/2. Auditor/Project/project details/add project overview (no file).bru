@@ -1,0 +1,37 @@
+meta {
+  name: add project overview (no file)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{big-data_dev}}/auditor/project/json
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "companyId": 9999,
+      "station_code": "NE=50747767", // you get this from station list (after user select a station)
+      "data_source_server_id": 9999, // you get this from connect IOT server api
+      // you get this from the form user fill, after skip upload
+      "data": {
+          "projectName": "Wastewater treatment plant modification for Utilization to biogas at Thai Eastern Bio Power Co.,ltd.",
+          "projectType": "Industrial Wastewater Management",
+          "projectLocation": "188 Moo 2, Khao Sok Subdistrict, Nong Yai District, Chonburi Province",
+          "tverMethodology": "T-VER-METH-WM-01",
+          "projectProponent": "Thai Eastern Bio Power Co.,ltd.",
+          "estimatedReductions": 396872,
+          "projectCreditingPeriod": "1 April 2022 - 31 March 2029",
+          "tverMethodologyVersion": "Version 06",
+          "verifiedCreditsRequested": 54367,
+          "verificationCreditingPeriod": "1 April 2024 - 31 March 2025",
+          "averageAnnualReductions": 1
+      }
+  }
+}
+
+settings {
+  encodeUrl: true
+}

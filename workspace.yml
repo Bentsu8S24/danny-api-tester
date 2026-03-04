@@ -4,12 +4,10 @@ info:
   type: workspace
 
 collections:
-  - name: "BigData-API"
-    path: "collections/BigData-API"
-  - name: "DEMP-API"
-    path: "collections/DEMP-API"
-  - name: "DAP-API"
-    path: "collections/DAP-API"
+  - name: "BigData"
+    path: "collections/BigData"
+  - name: "NEW DEMP"
+    path: "collections/NEW DEMP"
 
 specs:
 

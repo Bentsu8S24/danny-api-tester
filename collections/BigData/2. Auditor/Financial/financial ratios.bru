@@ -1,0 +1,19 @@
+meta {
+  name: financial ratios
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{big-data_dev}}/api/financial/financial-ratios?company_tax_id=0105530057852
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105530057852
+}
+
+settings {
+  encodeUrl: true
+}

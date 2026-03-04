@@ -1,0 +1,25 @@
+meta {
+  name: plant-all-footprint
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{bigdata-api-dev}}/plants-all-footprint?companyId=12&year=2025&refresh=true
+  body: none
+  auth: none
+}
+
+params:query {
+  companyId: 12
+  year: 2025
+  refresh: true
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

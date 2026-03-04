@@ -1,0 +1,63 @@
+meta {
+  name: Demp Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{demp_base_url}}/api/account/login/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  // {
+  //   "username": "adminex1",
+  //   "password": "EX1@demo123",
+  //   "is_remember": true,
+  //   "is_vekin_login": true
+  // }
+  // {
+  //     "username": "dempbank",
+  //     "password": "DempBank@demo123",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito1@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito2@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito3@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  {
+    "username": "aunyaman",
+    "password": "aunyaman@today",
+    "is_remember": true,
+    "is_vekin_login": true
+  }
+}
+
+script:post-response {
+  // // let jsonData = pm.response?.json() || {};
+  
+  // if (jsonData.sessionid && jsonData.csrftoken) {
+  //     const cookieValue = `sessionid=${jsonData.sessionid}; csrftoken=${jsonData.csrftoken}`;
+  // //     pm.collectionVariables.set("cookie_demp", cookieValue);
+  // }
+}
+
+settings {
+  encodeUrl: true
+}

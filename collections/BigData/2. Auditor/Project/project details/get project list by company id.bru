@@ -1,0 +1,19 @@
+meta {
+  name: get project list by company id
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{big-data_dev}}/auditor/project?companyId=1
+  body: json
+  auth: inherit
+}
+
+params:query {
+  companyId: 1
+}
+
+settings {
+  encodeUrl: true
+}

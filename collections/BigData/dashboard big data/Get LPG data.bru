@@ -1,0 +1,25 @@
+meta {
+  name: Get LPG data 
+  type: http
+  seq: 11
+}
+
+get {
+  url: http://localhost:8002/api/eppo/lpg
+  body: none
+  auth: none
+}
+
+params:query {
+  ~start_year: 2016
+  ~end_year: 2017
+  ~refresh: true
+}
+
+headers {
+  Cookie: sessionid=2oionqzjx2dzalpl480buslrhnrozdos; csrftoken=zRZJXaGxVuZtlakbzd7JkpzkkVvFDPJ0
+}
+
+settings {
+  encodeUrl: true
+}

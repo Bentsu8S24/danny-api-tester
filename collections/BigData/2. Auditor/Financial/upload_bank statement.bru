@@ -1,0 +1,23 @@
+meta {
+  name: upload_bank statement
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{big-data_dev}}/api/financial-statements/upload?company_tax_id=0105553145553
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+body:multipart-form {
+  files: @file(/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300028440033_May 1.pdf)
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Auditor Register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{demp_base_url}}/api/climate-finance/auditor/register
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  email: example@mail.com
+  metadata: {"first_name":"John","last_name":"Doe","id_card":"1234567890123","email":"example@mail.com","phone":"0818818881"}
+  files: @file()
+}
+
+settings {
+  encodeUrl: true
+}

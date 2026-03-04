@@ -1,0 +1,15 @@
+meta {
+  name: Profile Info
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{demp_base_url}}/api/account/profile/users/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

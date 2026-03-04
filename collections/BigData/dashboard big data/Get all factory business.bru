@@ -1,0 +1,19 @@
+meta {
+  name: Get all factory business
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/bigdata/factory-business
+  body: none
+  auth: inherit
+}
+
+headers {
+  Cookie: sessionid=2oionqzjx2dzalpl480buslrhnrozdos; csrftoken=zRZJXaGxVuZtlakbzd7JkpzkkVvFDPJ0
+}
+
+settings {
+  encodeUrl: true
+}

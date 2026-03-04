@@ -1,0 +1,24 @@
+meta {
+  name: get station details
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{big-data_local}}/auditor/iot/stations?company_id=1&station_code=NE=50747767
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 1
+  station_code: NE=50747767
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

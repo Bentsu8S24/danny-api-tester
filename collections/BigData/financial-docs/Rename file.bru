@@ -1,0 +1,23 @@
+meta {
+  name: Rename file
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{bigdata-api-dev}}/api/financial-documents/f0d715ac-9ef3-4f32-9919-63a0dfa0c8b8/rename?company_id=39
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  company_id: 39
+}
+
+body:multipart-form {
+  file_name: ชื่อไฟล์ใหม่
+}
+
+settings {
+  encodeUrl: true
+}

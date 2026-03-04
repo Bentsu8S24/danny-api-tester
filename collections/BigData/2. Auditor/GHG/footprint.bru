@@ -1,0 +1,25 @@
+meta {
+  name: footprint
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{bigdata-api-dev}}/footprint?companyId=417&branchId=5449&year=2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 417
+  branchId: 5449
+  year: 2025
+}
+
+headers {
+  ~Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

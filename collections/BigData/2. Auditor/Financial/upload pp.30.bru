@@ -1,0 +1,23 @@
+meta {
+  name: upload pp.30
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{bigdata-api-dev}}/api/company-pp30/upload/?company_tax_id=0105553145553
+  body: multipartForm
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+body:multipart-form {
+  files: @file(/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300025543623_Jan 2.pdf|/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300026331242_Feb.pdf|/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300027383276_Mar 1.pdf|/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300027761407_Apr.pdf|/Users/chutipontipmanee/Downloads/AI-Auditor/PP.30_68/TAX_FORM_P300028440033_May 1.pdf)
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: preview file
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/financial-documents/preview/613eb671-c65f-4af2-af0a-27eedb6570e0?company_id=39
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 39
+}
+
+settings {
+  encodeUrl: true
+}

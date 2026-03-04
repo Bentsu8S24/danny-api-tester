@@ -1,0 +1,120 @@
+meta {
+  name: 1. create/update canvas
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{big-data_dev}}/auditor/canvas
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "userId": 1,
+      "companyDempId": 233,
+      "items": [
+        {
+          "id": "1",
+          "titleKey": "canvas.items.sustainablePartnership",
+          "content": "<p>Partnership with local communities Donut</p>",
+          "icon": "UsersRound",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "2",
+          "titleKey": "canvas.items.sustainableOperations",
+          "content": "<p>donut is tired after kfc</p>",
+          "icon": "UserRoundCog",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "3",
+          "titleKey": "canvas.items.stakeholderEngagement",
+          "content": "<p>Regular stakeholder meetings</p>",
+          "icon": "HandHeart",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "4",
+          "titleKey": "canvas.items.stakeholderEngagementDescription",
+          "content": "<p>Renewable resources usage</p>",
+          "icon": "Boxes",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "5",
+          "titleKey": "canvas.items.impactfulCustomerSegments",
+          "content": "<p>Eco-conscious consumers</p>",
+          "icon": "Handshake",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "6",
+          "titleKey": "canvas.items.sustainableDistribution",
+          "content": "<p>Green logistics and delivery</p>",
+          "icon": "BaggageClaim",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "7",
+          "titleKey": "canvas.items.sustainableValueProposition",
+          "content": "<p>Sustainable products and services</p>",
+          "icon": "FolderOpen",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "8",
+          "titleKey": "canvas.items.esgMetricAndReporting",
+          "content": "<p>Annual ESG reports</p>",
+          "icon": "ScrollText",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "9",
+          "titleKey": "canvas.items.impactOnSDGs",
+          "content": "<p>Contributing to multiple SDGs</p>",
+          "icon": "Globe",
+          "isGreen": false,
+          "sdgs": [1, 3, 6, 13]
+        },
+        {
+          "id": "10",
+          "titleKey": "canvas.items.esgRiskManagement",
+          "content": "<p>Proactive risk assessment</p>",
+          "icon": "ShieldCheck",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "11",
+          "titleKey": "canvas.items.sustainableInvestments",
+          "content": "<p>Green technology investments</p>",
+          "icon": "CircleDollarSign",
+          "isGreen": false,
+          "sdgs": []
+        },
+        {
+          "id": "12",
+          "titleKey": "canvas.items.sustainableRevenue",
+          "content": "<p>Revenue from sustainable products</p>",
+          "icon": "ChartNoAxesCombined",
+          "isGreen": false,
+          "sdgs": []
+        }
+      ]
+    }
+}
+
+settings {
+  encodeUrl: true
+}

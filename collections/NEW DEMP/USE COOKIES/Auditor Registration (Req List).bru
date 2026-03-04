@@ -1,0 +1,19 @@
+meta {
+  name: Auditor Registration (Req List)
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{demp_base_url}}/api/climate-finance/auditor/registration?answer=pending
+  body: none
+  auth: inherit
+}
+
+params:query {
+  answer: pending
+}
+
+settings {
+  encodeUrl: true
+}

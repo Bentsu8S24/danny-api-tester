@@ -1,0 +1,20 @@
+meta {
+  name: add project data (upload 1 file)
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{big-data_dev}}/auditor/project/19
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  companyId: 1
+  project_data: @file(/Users/chutipontipmanee/Downloads/AI-Auditor/2025_TVER TEBP (Checked)_Comment 17.08.2025.xlsx)
+}
+
+settings {
+  encodeUrl: true
+}

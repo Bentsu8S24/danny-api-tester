@@ -1,0 +1,20 @@
+meta {
+  name: ghg
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{bigdata-api-dev}}/ghg?companyId=417&year=2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 417
+  year: 2025
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: get file form ai
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{big-data_dev}}/auditor/project/152?companyId=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 1
+}
+
+headers {
+  accept: */*
+}
+
+settings {
+  encodeUrl: true
+}

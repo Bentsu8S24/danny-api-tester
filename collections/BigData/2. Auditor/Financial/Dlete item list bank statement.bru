@@ -1,0 +1,15 @@
+meta {
+  name: Dlete item list bank statement
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{big-data_dev}}/api/financial-statements/delete/financial-statements%2F0105553145553%2Ffinancial-statements-0105553145553-AP62XB.pdf
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Create/Get canvas info
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/canvas/from-ocr/39
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~forceUpdate: true
+}
+
+settings {
+  encodeUrl: true
+}

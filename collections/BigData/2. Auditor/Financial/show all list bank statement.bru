@@ -1,0 +1,19 @@
+meta {
+  name: show all list bank statement
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{big-data_dev}}/api/financial-statements?company_tax_id=0105553145553
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Delete file
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{bigdata-api-dev}}/api/financial-documents/f0d715ac-9ef3-4f32-9919-63a0dfa0c8b8?company_id=39
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 39
+}
+
+settings {
+  encodeUrl: true
+}

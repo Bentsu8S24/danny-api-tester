@@ -1,0 +1,25 @@
+meta {
+  name: Update company info
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{bigdata-api-dev}}/company/info/update/39
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  contactName: Test!!!
+  email: example@mail.com
+  ~profileImage: @file()
+  ~contactPhoneNumber: 
+  ~websiteUrl: 
+  ~facebookUrl: 
+  ~instagramUrl: 
+}
+
+settings {
+  encodeUrl: true
+}

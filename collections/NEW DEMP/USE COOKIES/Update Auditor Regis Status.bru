@@ -1,0 +1,20 @@
+meta {
+  name: Update Auditor Regis Status
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{demp_base_url}}/api/climate-finance/auditor/registration/status/update/{{id}}
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  answer: reject
+  rejection_reason: YOU FAILED!!
+}
+
+settings {
+  encodeUrl: true
+}

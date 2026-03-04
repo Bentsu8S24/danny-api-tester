@@ -1,0 +1,23 @@
+meta {
+  name: Upload image
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{bigdata-api-dev}}/auditor/station-image/upload
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  companyTaxId: 0105553145553
+  stationName: House 01
+  latitude: 23.45765
+  longitude: 22.4565879
+  file: @file(/Users/bentleyvenkin/Downloads/picture/home1.png)
+}
+
+settings {
+  encodeUrl: true
+}

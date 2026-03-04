@@ -1,0 +1,15 @@
+meta {
+  name: profile
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{bigdata-api-dev}}/auth/profile
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

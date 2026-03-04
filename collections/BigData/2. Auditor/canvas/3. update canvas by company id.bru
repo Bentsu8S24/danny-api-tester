@@ -1,0 +1,31 @@
+meta {
+  name: 3. update canvas by company id
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{big-data_dev}}/auditor/canvas/12
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "items": [
+        {
+          "id": "1",
+          "titleKey": "canvas.items.sustainablePartnership",
+          "content": "testing testing",
+          "icon": "UsersRound",
+          "isGreen": false,
+          "sdgs": []
+        }
+       
+      ]
+    }
+}
+
+settings {
+  encodeUrl: true
+}

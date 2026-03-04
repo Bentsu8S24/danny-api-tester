@@ -1,0 +1,24 @@
+meta {
+  name: Get Accounting Data
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{base_url}}/api/accounting?company_tax_id=0105553145553&refresh=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+  refresh: false
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

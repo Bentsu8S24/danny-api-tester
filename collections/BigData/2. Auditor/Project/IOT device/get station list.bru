@@ -1,0 +1,23 @@
+meta {
+  name: get station list
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{big-data_local}}/auditor/iot/stations?company_id=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 1
+}
+
+headers {
+  Cookie: {{cookie_demp}}
+}
+
+settings {
+  encodeUrl: true
+}

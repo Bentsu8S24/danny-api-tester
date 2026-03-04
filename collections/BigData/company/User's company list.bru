@@ -1,0 +1,15 @@
+meta {
+  name: User's company list
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{bigdata-api-dev}}/company/user-company
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

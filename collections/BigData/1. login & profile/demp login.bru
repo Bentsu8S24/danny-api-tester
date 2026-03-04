@@ -1,0 +1,65 @@
+meta {
+  name: demp login
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://demp-api-dev.vekin.co.th/api/account/login/
+  body: json
+  auth: none
+}
+
+body:json {
+  // {
+  //   "username": "adminex1",
+  //   "password": "EX1@demo123",
+  //   "is_remember": true,
+  //   "is_vekin_login": true
+  // }
+  // {
+  //     "username": "dempbank",
+  //     "password": "DempBank@demo123",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito1@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito2@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  // {
+  //     "username": "ai_audito3@dev",
+  //     "password": "aiaudito@v3L!2025",
+  //     "is_remember": true,
+  //     "is_vekin_login": true
+  // }
+  {
+    "username": "aunyaman",
+    "password": "aunyaman@today",
+    "is_remember": true,
+    "is_vekin_login": true
+  }
+}
+
+script:post-response {
+  let jsonData = res.getBody() || {};
+  
+  if (jsonData.sessionid && jsonData.csrftoken) {
+      const cookieValue = `sessionid=${jsonData.sessionid}; csrftoken=${jsonData.csrftoken}`;
+      bru.setVar("cookie_demp", cookieValue);
+  //     // pm.environment.set("cookie_demp", cookieValue);
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

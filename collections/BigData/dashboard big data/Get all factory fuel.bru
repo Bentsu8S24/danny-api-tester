@@ -1,0 +1,19 @@
+meta {
+  name: Get all factory fuel
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{bigdata-api-dev}}/api/bigdata/factory-fuel
+  body: none
+  auth: none
+}
+
+headers {
+  Cookie: sessionid=2oionqzjx2dzalpl480buslrhnrozdos; csrftoken=zRZJXaGxVuZtlakbzd7JkpzkkVvFDPJ0
+}
+
+settings {
+  encodeUrl: true
+}

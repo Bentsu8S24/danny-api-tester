@@ -1,0 +1,23 @@
+meta {
+  name: connect IOT server
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{big-data_local}}/auditor/iot/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "company_id": 60,
+      "username": "storage_system_7",
+      "password": "Testsystem123"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

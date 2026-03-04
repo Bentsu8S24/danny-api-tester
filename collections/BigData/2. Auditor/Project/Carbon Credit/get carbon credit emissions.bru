@@ -1,0 +1,21 @@
+meta {
+  name: get carbon credit emissions
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{big-data_dev}}/auditor/iot/stations/data/carbon-credit?company_id=23&project_id=80&year=2025
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_id: 23
+  project_id: 80
+  year: 2025
+}
+
+settings {
+  encodeUrl: true
+}

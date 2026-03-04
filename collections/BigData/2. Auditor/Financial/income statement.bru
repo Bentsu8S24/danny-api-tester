@@ -1,0 +1,19 @@
+meta {
+  name: income statement
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{big-data_dev}}/api/financial/income-statement?company_tax_id=0105553145553
+  body: none
+  auth: inherit
+}
+
+params:query {
+  company_tax_id: 0105553145553
+}
+
+settings {
+  encodeUrl: true
+}

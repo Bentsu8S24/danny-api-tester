@@ -1,0 +1,121 @@
+meta {
+  name: 2. create/update cfo auditor
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{big-data_local}}/auditor/cfo
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userId": 1,
+    "companyDempId": 13,
+    "data": {
+      "controlPlan": {
+        "riskAnalysis": {
+          "inherentRisk": "testing donut from textarea",
+          "controlRisk": "text from textarea",
+          "detectionRisk": "text from textarea"
+        },
+        "assetRisk": "text from textarea",
+        "samplingPlan": [
+          {
+            "evidenceType": "string",
+            "verificationCount": "string"
+          }
+        ]
+      },
+      "controlProcess": {
+        "methods": "text from textarea",
+        "taxSubmission": "text from textarea",
+        "defectDiscovery": "text from textarea",
+        "recoveryInvestigation": "text from textarea",
+        "resultSubmission": "text from textarea"
+      },
+      "auditFindings": {
+        "informationStatus": "text from textarea",
+        "calculationAccuracy": "text from textarea",
+        "dataQuality": "text from textarea",
+        "managementSystem": "text from textarea"
+      },
+      "defectsAndConflicts": {
+        "correctiveActions": [
+          {
+            "sequence": "string",
+            "items": "string",
+            "requirements": "string",
+            "organizationActions": "string",
+            "conclusion": "string"
+          }
+        ],
+        "clarificationRequests": [
+          {
+            "sequence": "string",
+            "items": "string",
+            "requirements": "string",
+            "organizationActions": "string",
+            "conclusion": "string"
+          }
+        ],
+        "forwardActions": [
+          {
+            "sequence": "string",
+            "items": "string",
+            "requirements": "string",
+            "organizationActions": "string",
+            "conclusion": "string"
+          }
+        ]
+      },
+      "controlSummary": {
+        "criteriaIssue": {
+          "yes": false,
+          "no": false
+        },
+        "significantError": {
+          "yes": false,
+          "no": false,
+          "comments": "string from input field"
+        },
+        "certificationScope": {
+          "yes": false,
+          "no": false
+        },
+        "limitations": {
+          "yes": false,
+          "no": false
+        },
+        "additionalDetails": "text from textarea",
+        "actionDetails": "text from textarea"
+      },
+      "carbonFootprint": {
+        "scope1": 1500.5,
+        "scope2": 800.3,
+        "scope3": {
+          "value": 2000.0,
+          "activity": "string from input"
+        },
+        "sequestration": {
+          "value": 100.5,
+          "quantity": "string from input"
+        }
+      },
+      "baseYearCarbon": {
+        "carbonQuantityBaseYear": {
+          "value": 5000,
+          "year": "2020"
+        },
+        "carbonQuantityCurrent": 4500,
+        "requestingCertification": 1
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}
