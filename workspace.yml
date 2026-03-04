@@ -1,0 +1,10 @@
+opencollection: 1.0.0
+info:
+  name: "danny-api-tester"
+  type: workspace
+
+collections:
+
+specs:
+
+docs: ''
