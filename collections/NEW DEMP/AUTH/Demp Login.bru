@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{demp_base_url}}/api/account/login/
+  url: {{DEMP_BASE_URL}}/api/account/login/
   body: json
   auth: inherit
 }
@@ -60,4 +60,5 @@ script:post-response {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/api/company-pp30/?company_tax_id=0105553145553
+  url: {{BIGDATA_BASE_URL_DEV}}/api/company-pp30/?company_tax_id=0105553145553
   body: none
   auth: inherit
 }
@@ -16,4 +16,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

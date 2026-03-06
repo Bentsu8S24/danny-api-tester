@@ -5,17 +5,18 @@ meta {
 }
 
 post {
-  url: {{demp_base_url}}/api/climate-finance/auditor/register
+  url: {{DEMP_BASE_URL}}/api/climate-finance/auditor/register
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  email: example@mail.com
-  metadata: {"first_name":"John","last_name":"Doe","id_card":"1234567890123","email":"example@mail.com","phone":"0818818881"}
-  files: @file()
+  email: dogow85208@7novels.com
+  metadata: {"email":"dogow85208@7novels.com","phone":"0812345678","roles":{"veriFier_TVER":false,"leadVerifier_CFO":true,"leadVerifier_TVER":true,"traineeveriFier_TVER":true,"technicalReviewer_TVER":false,"traineeleadVerifier_TVER":false},"address":"79/18-20 ม.7, ถนนเศรษฐกิจ 1, ท่าทราย เมือง สมุทรสาคร, 74000","id_card":"3210000000123","programs":{"pg2-1":true,"pg2-2":true,"pg2-3":false},"last_name":"Casey","first_name":"Tianna","approval_granted":"no"}
+  files: @file(/Users/bentleyvenkin/Downloads/picture/home1.png)
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

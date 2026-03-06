@@ -5,11 +5,12 @@ meta {
 }
 
 get {
-  url: {{demp_base_url}}/api/account/profile/users/
+  url: {{DEMP_BASE_URL}}/api/account/profile/users/
   body: none
   auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/api/financial/financial-ratios?company_tax_id=0105530057852
+  url: {{BIGDATA_BASE_URL_DEV}}/api/financial/financial-ratios?company_tax_id=0105530057852
   body: none
   auth: inherit
 }
@@ -16,4 +16,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/auditor/iot/stations/data/carbon-credit?company_id=23&project_id=80&year=2025
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/iot/stations/data/carbon-credit?company_id=23&project_id=80&year=2025
   body: none
   auth: inherit
 }
@@ -18,4 +18,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

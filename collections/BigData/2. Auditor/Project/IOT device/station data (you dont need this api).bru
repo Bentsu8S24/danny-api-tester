@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/auditor/iot/stations/data?company_id=60&station_code=NE%3D50747767&year=2025&data_source_server_id=23
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/iot/stations/data?company_id=60&station_code=NE%3D50747767&year=2025&data_source_server_id=23
   body: none
   auth: inherit
 }
@@ -19,4 +19,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

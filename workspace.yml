@@ -11,4 +11,11 @@ collections:
 
 specs:
 
-docs: ''
+docs: |
+  Workspace สำหรับทดสอบ API (Bruno/OpenCollection)
+
+  ประกอบด้วย collections:
+  - BigData: API ชุด Big Data (login, company, auditor, financial, GHG, project, ฯลฯ) — ใช้ cookies หลัง login
+  - NEW DEMP: API ชุด DEMP (AUTH, Profile, Auditor Register, ฯลฯ)
+
+  ใช้สำหรับรัน request, ตรวจ response และทดสอบ flow ระหว่าง dev/localhost/prod

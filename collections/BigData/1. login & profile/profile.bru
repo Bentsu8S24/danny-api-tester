@@ -5,11 +5,12 @@ meta {
 }
 
 get {
-  url: {{bigdata-api-dev}}/auth/profile
+  url: {{BIGDATA_BASE_URL_DEV}}/auth/profile
   body: none
   auth: inherit
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

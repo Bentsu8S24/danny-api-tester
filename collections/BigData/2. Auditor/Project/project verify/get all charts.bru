@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/auditor/project/107/verify?companyId=8&year=2024
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/project/107/verify?companyId=8&year=2024
   body: none
   auth: inherit
 }
@@ -17,4 +17,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

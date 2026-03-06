@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_local}}/auditor/iot/stations?company_id=1
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/iot/stations?company_id=1
   body: none
   auth: inherit
 }
@@ -20,4 +20,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

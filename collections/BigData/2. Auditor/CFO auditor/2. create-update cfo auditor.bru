@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{big-data_local}}/auditor/cfo
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/cfo
   body: json
   auth: inherit
 }
@@ -118,4 +118,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

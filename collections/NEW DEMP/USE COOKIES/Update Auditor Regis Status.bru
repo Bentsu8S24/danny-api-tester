@@ -5,16 +5,17 @@ meta {
 }
 
 put {
-  url: {{demp_base_url}}/api/climate-finance/auditor/registration/status/update/{{id}}
+  url: {{DEMP_BASE_URL}}/api/climate-finance/auditor/access-request/status/update/{{id}}
   body: multipartForm
   auth: inherit
 }
 
 body:multipart-form {
-  answer: reject
-  rejection_reason: YOU FAILED!!
+  answer: accept
+  ~rejection_reason: YOU FAILED!!
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

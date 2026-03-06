@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_dev}}/auditor/project/23/station?companyId=23
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/project/23/station?companyId=23
   body: none
   auth: inherit
 }
@@ -20,4 +20,5 @@ headers {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

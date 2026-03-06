@@ -7,20 +7,9 @@ auth {
 }
 
 vars:pre-request {
-  bigdata-api-dev: 
-  cookie_demp: 
-  localhost3002: 
-  bigdata-api-prod: 
-}
-
-script:pre-request {
-  const csrftoken = bru.getVar('cookie_demp');
-  if (csrftoken) {
-      req.getHeaders().upsert({ key: 'cookies', value: csrftoken });
-  } else {
-      // Optionally remove the header if variable is missing
-      req.getHeaders().remove('cookies');
-  }
+  BIGDATA_BASE_URL_DEV: https://big-data-api-dev.vekin.co.th
+  LOCALHOST: http://localhost:3002
+  BIGDATA_BASE_URL_PROD: https://big-data-api.vekin.co.th
 }
 
 docs {

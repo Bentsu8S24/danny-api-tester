@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{big-data_dev}}/auditor/project/json
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/project/json
   body: json
   auth: inherit
 }
@@ -34,4 +34,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

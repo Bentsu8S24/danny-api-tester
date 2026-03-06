@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{bigdata-api-dev}}/api/financial/financial-calculate?company_tax_id=0105553145553&project_id=112&company_id=35&year=2024
+  url: {{BIGDATA_BASE_URL_DEV}}/api/financial/financial-calculate?company_tax_id=0105553145553&project_id=112&company_id=35&year=2024
   body: none
   auth: inherit
 }
@@ -19,4 +19,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

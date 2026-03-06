@@ -5,7 +5,7 @@ meta {
 }
 
 put {
-  url: {{big-data_dev}}/auditor/project/19
+  url: {{BIGDATA_BASE_URL_DEV}}/auditor/project/19
   body: multipartForm
   auth: inherit
 }
@@ -17,4 +17,5 @@ body:multipart-form {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

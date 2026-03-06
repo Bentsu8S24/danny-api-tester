@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: {{big-data_local}}/emission/166521?companyId=12
+  url: {{BIGDATA_BASE_URL_DEV}}/emission/166521?companyId=12
   body: none
   auth: inherit
 }
@@ -16,4 +16,5 @@ params:query {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
