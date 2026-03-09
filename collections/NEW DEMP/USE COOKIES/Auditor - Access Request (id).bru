@@ -1,0 +1,16 @@
+meta {
+  name: Auditor - Access Request (id)
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{DEMP_BASE_URL}}/api/climate-finance/auditor/access-request/{{id}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
