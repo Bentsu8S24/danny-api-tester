@@ -50,12 +50,30 @@ body:json {
 }
 
 script:post-response {
-  // // let jsonData = pm.response?.json() || {};
+  const rawCookie = res.getHeader('set-cookie');
   
-  // if (jsonData.sessionid && jsonData.csrftoken) {
-  //     const cookieValue = `sessionid=${jsonData.sessionid}; csrftoken=${jsonData.csrftoken}`;
-  // //     pm.collectionVariables.set("cookie_demp", cookieValue);
-  // }
+  if (rawCookie) {
+    // แปลงเป็น String ในกรณีที่เป็น Array
+    const cookieStr = Array.isArray(rawCookie) ? rawCookie.join('; ') : rawCookie;
+  
+    // ใช้ Regular Expression เพื่อดึงเฉพาะ Key=Value ของ csrftoken และ sessionid
+    const csrfMatch = cookieStr.match(/csrftoken=([^;]+)/);
+    const sessionMatch = cookieStr.match(/sessionid=([^;]+)/);
+  
+    let finalCookie = "";
+  
+    if (csrfMatch) finalCookie += csrfMatch[0];
+    if (sessionMatch) {
+      if (finalCookie) finalCookie += "; ";
+      finalCookie += sessionMatch[0];
+    }
+  
+    // เก็บลงใน Variable ชื่อ 'my_auth_cookie'
+    if (finalCookie) {
+      bru.setVar("MY_AUTH_COOKIE", finalCookie);
+      console.log("Saved Cookie:", finalCookie);
+    }
+  }
 }
 
 settings {

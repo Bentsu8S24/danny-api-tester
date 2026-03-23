@@ -1,0 +1,15 @@
+info:
+  name: DBD Company
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://openapi.dbd.go.th/api/v1/juristic_person/0505566027747
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+meta {
+  name: all company
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BIGDATA_BASE_URL_PROD}}/company/all
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: 4db5705d82487dd549a4d9dc65d8d67208cd4f24afb5
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

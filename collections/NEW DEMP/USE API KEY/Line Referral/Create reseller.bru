@@ -1,18 +1,19 @@
 meta {
-  name: Adding company
+  name: Create reseller
   type: http
-  seq: 3
+  seq: 1
 }
 
 post {
-  url: {{bigdata-api-dev}}/company/add-company
+  url: {{LOCALHOST}}/api/account/reseller/
   body: json
   auth: inherit
 }
 
 body:json {
   {
-      "taxId": "0105553145553"
+    "name": "Test Reseller 6",
+    "company_id": 363
   }
 }
 

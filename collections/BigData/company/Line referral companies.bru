@@ -1,0 +1,20 @@
+meta {
+  name: Line referral companies
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{LOCALHOST}}/company/line-referral/{{company_demp_id}}
+  body: none
+  auth: inherit
+}
+
+vars:pre-request {
+  company_demp_id: 363
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

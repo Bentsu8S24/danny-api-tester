@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{DEMP_BASE_URL}}/api/climate-finance/auditor/access-request?answer=pending
+  url: {{DEMP_BASE_URL}}/api/climate-finance/auditor/access-request
   body: none
   auth: inherit
 }
 
 params:query {
-  answer: pending
+  ~answer: pending
 }
 
 settings {

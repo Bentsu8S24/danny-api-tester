@@ -1,0 +1,20 @@
+meta {
+  name: Referral company
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{DEMP_BASE_URL}}/api/climate-finance/line/referral/company?id=363
+  body: none
+  auth: inherit
+}
+
+params:query {
+  id: 363
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

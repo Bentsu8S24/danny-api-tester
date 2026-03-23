@@ -1,0 +1,23 @@
+meta {
+  name: Create referral log
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{LOCALHOST}}/api/account/referlog/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "line_user_id": "line_user_id_test_0001",
+    "referral_code": "1047f5f8-e3cb-4273-b70c-d3a2791dfba8"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

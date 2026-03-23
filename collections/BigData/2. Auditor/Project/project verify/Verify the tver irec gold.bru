@@ -1,0 +1,27 @@
+meta {
+  name: Verify the tver irec gold
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BIGDATA_BASE_URL_DEV}}/project-verification/verify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "input_data": {
+      "project_name": "ชื่อโครงการ",
+      "location": "กรุงเทพ",
+      "project_proponent": "บริษัท ABC จำกัด",
+      "avg_annual_projection": 1000
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
