@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: https://openapi.dbd.go.th/api/v1/juristic_person/0505566027747
+  url: https://openapi.dbd.go.th/api/v1/juristic_person/0133553003277
   auth: inherit
 
 settings:
