@@ -5,13 +5,13 @@ meta {
 }
 
 get {
-  url: {{BIGDATA_BASE_URL_DEV}}/auditor/project/9?companyId=1
+  url: {{LOCALHOST}}/auditor/project/{{projectId}}?companyId={{companyId}}
   body: none
   auth: inherit
 }
 
 params:query {
-  companyId: 1
+  companyId: {{companyId}}
 }
 
 settings {

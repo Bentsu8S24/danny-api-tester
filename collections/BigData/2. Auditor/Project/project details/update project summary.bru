@@ -1,0 +1,1515 @@
+meta {
+  name: update project summary
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{LOCALHOST}}/auditor/project/{{projectId}}/data?companyId={{companyId}}
+  body: json
+  auth: inherit
+}
+
+params:query {
+  companyId: {{companyId}}
+}
+
+body:json {
+  {
+    "de": {
+      "projectName": "Modifikation der Abwasserbehandlungsanlage zur Nutzung von Biogas bei Thai Eastern Bio Power Co.,ltd.",
+      "projectType": "Industrielles Abwassermanagement",
+      "projectLocation": "188 Moo 2, Khao Sok, Nong Yai, Chonburi 20190",
+      "tverMethodology": "T-VER-METH-WM-01",
+      "projectProponent": "Thai Eastern Bio Power Co.,ltd.",
+      "estimatedReductions": 396872,
+      "monitoringParameters": [
+        {
+          "id": "GWP_CH4",
+          "name": "Treibhauspotenzial von Methan",
+          "unit": "tCO2e/tCH4",
+          "source": "TGO-Ankündigung zum Treibhauspotenzial für T-VER-Projekte",
+          "expectedRange": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        {
+          "id": "EF_EC,y",
+          "name": "Netzemissionsfaktor im Jahr y",
+          "unit": "tCO2/MWh",
+          "source": "Bericht zum Netzemissionsfaktor von TGO",
+          "expectedRange": {
+            "max": 0.4857,
+            "min": 0.4857
+          }
+        },
+        {
+          "id": "Q_ww,PJ,y",
+          "name": "Menge des in das Behandlungssystem eingeleiteten Abwassers im Jahr y",
+          "unit": "m3/year",
+          "source": "Messbericht oder Berechnung des erzeugten Abwassers",
+          "expectedRange": {
+            "max": 158882,
+            "min": 142727
+          }
+        },
+        {
+          "id": "COD_inf,PJ,y",
+          "name": "Durchschnittlicher COD des Abwassers, das in den anaeroben Behandlungsprozess im Jahr y eingeleitet wird",
+          "unit": "mg/l",
+          "source": "Analysebericht des Zentrallabors",
+          "expectedRange": {
+            "max": 91847.67,
+            "min": 85851.33
+          }
+        },
+        {
+          "id": "COD_eff,PJ,y",
+          "name": "Durchschnittlicher COD des Wassers, das den anaeroben Behandlungsprozess im Jahr y durchläuft",
+          "unit": "mg/l",
+          "source": "Analysebericht des Zentrallabors",
+          "expectedRange": {
+            "max": 2026.96,
+            "min": 1980.52
+          }
+        },
+        {
+          "id": "V_CH4,biogas,y",
+          "name": "Menge an Methan, die in das Fackelsystem im Jahr y eintritt",
+          "unit": "tCH4/year",
+          "source": "Messbericht oder Berechnungsbericht",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "FC_PJ,LPG,y",
+          "name": "Menge des für den Projektbetrieb verwendeten fossilen Brennstoffs (LPG) im Jahr y",
+          "unit": "Kg/year",
+          "source": "Bericht über den Verbrauch fossiler Brennstoffe des Projekts",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "EC_PJ,y",
+          "name": "Menge an Netzstrom, die für den Projektbetrieb im Jahr y verwendet wird",
+          "unit": "kWh/year",
+          "source": "Messbericht",
+          "expectedRange": {
+            "max": 768100.03,
+            "min": 141660
+          }
+        }
+      ],
+      "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+      "tverMethodologyVersion": "Version 06",
+      "nonMonitoringParameters": [
+        {
+          "id": "MCF_BL",
+          "name": "Methankorrekturfaktor für den anaeroben Abwasserbehandlungsprozess der Baseline",
+          "unit": "-",
+          "value": "0.80",
+          "source": "Seite 6 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "UF_BL",
+          "name": "Modellkorrekturfaktor für die Unsicherheit des anaeroben Abwasserbehandlungsprozesses der Baseline",
+          "unit": "-",
+          "value": "0.89",
+          "source": "Seite 8 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "B_o",
+          "name": "Methanproduktionskapazität des anaeroben Abwasserbehandlungsprozesses",
+          "unit": "kgCH4/kg COD removal",
+          "value": "0.25",
+          "source": "Seite 30 ACM0014 : Treatment of Wastewater version 6.0"
+        },
+        {
+          "id": "MCF_PJ",
+          "name": "Methankorrekturfaktor für den anaeroben Abwasserbehandlungsprozess des Projekts",
+          "unit": "-",
+          "value": "0.80",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "CFE",
+          "name": "Methanerfassungseffizienz des anaeroben Abwasserbehandlungsprozesses des Projekts",
+          "unit": "-",
+          "value": "0.90",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "UF_PJ",
+          "name": "Modellkorrekturfaktor für die Unsicherheit des anaeroben Abwasserbehandlungsprozesses des Projekts",
+          "unit": "-",
+          "value": "1.12",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "FE",
+          "name": "Fackeleffizienz",
+          "unit": "-",
+          "value": "0.5",
+          "source": "Effizienz offener Fackeln 0.50"
+        },
+        {
+          "id": "NCV_LPG",
+          "name": "Unterer Heizwert des fossilen Brennstofftyps Flüssiggas (LPG)",
+          "unit": "MJ/kg",
+          "value": "49.30",
+          "source": "Option 3, Energiestatistikbericht von Thailand, Energieministerium"
+        },
+        {
+          "id": "EF_CO2,LPG",
+          "name": "THG-Emissionsfaktor aus der Verbrennung des fossilen Brennstofftyps Flüssiggas (LPG)",
+          "unit": "kgCO2/TJ",
+          "value": "63100",
+          "source": "Tabelle 1.4 2006 IPCC-Richtlinien für nationale THG-Inventare"
+        }
+      ],
+      "verifiedCreditsRequested": 54367,
+      "verificationCreditingPeriod": "1 April 2024 - 31 March 2025"
+    },
+    "en": {
+      "projectName": "Wastewater treatment plant modification for Utilization to biogas at Thai Eastern Bio Power Co.,ltd.",
+      "projectType": "Industrial wastewater management",
+      "projectLocation": "188 Moo 2, Khao Sok, Nong Yai, Chonburi 20190",
+      "tverMethodology": "T-VER-METH-WM-01",
+      "projectProponent": "Thai Eastern Bio Power Co.,ltd.",
+      "estimatedReductions": 396872,
+      "monitoringParameters": [
+        {
+          "id": "GWP_CH4",
+          "name": "Global warming potential of methane",
+          "unit": "tCO2e/tCH4",
+          "source": "TGO announcement on global warming potential for T-VER projects",
+          "expectedRange": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        {
+          "id": "EF_EC,y",
+          "name": "Grid emission factor in year y",
+          "unit": "tCO2/MWh",
+          "source": "Grid emission factor report by TGO",
+          "expectedRange": {
+            "max": 0.4857,
+            "min": 0.4857
+          }
+        },
+        {
+          "id": "Q_ww,PJ,y",
+          "name": "Quantity of wastewater entering the treatment system in year y",
+          "unit": "m3/year",
+          "source": "Measurement report or calculation of wastewater generated",
+          "expectedRange": {
+            "max": 158882,
+            "min": 142727
+          }
+        },
+        {
+          "id": "COD_inf,PJ,y",
+          "name": "Average COD of wastewater entering the anaerobic treatment process in year y",
+          "unit": "mg/l",
+          "source": "Analysis report from central laboratory",
+          "expectedRange": {
+            "max": 91847.67,
+            "min": 85851.33
+          }
+        },
+        {
+          "id": "COD_eff,PJ,y",
+          "name": "Average COD of water passing through the anaerobic treatment process in year y",
+          "unit": "mg/l",
+          "source": "Analysis report from central laboratory",
+          "expectedRange": {
+            "max": 2026.96,
+            "min": 1980.52
+          }
+        },
+        {
+          "id": "V_CH4,biogas,y",
+          "name": "Quantity of methane entering the flare system in year y",
+          "unit": "tCH4/year",
+          "source": "Measurement report or calculation report",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "FC_PJ,LPG,y",
+          "name": "Quantity of fossil fuel (LPG) used for project operation in year y",
+          "unit": "Kg/year",
+          "source": "Project fossil fuel usage report",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "EC_PJ,y",
+          "name": "Quantity of grid electricity used for project operation in year y",
+          "unit": "kWh/year",
+          "source": "Measurement report",
+          "expectedRange": {
+            "max": 768100.03,
+            "min": 141660
+          }
+        }
+      ],
+      "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+      "tverMethodologyVersion": "Version 06",
+      "nonMonitoringParameters": [
+        {
+          "id": "MCF_BL",
+          "name": "Methane Correction Factor for baseline anaerobic wastewater treatment process",
+          "unit": "-",
+          "value": "0.80",
+          "source": "Page 6 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "UF_BL",
+          "name": "Model correction factor for uncertainty of baseline anaerobic wastewater treatment process",
+          "unit": "-",
+          "value": "0.89",
+          "source": "Page 8 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "B_o",
+          "name": "Methane producing capacity of the anaerobic wastewater treatment process",
+          "unit": "kgCH4/kg COD removal",
+          "value": "0.25",
+          "source": "Page 30 ACM0014 : Treatment of Wastewater version 6.0"
+        },
+        {
+          "id": "MCF_PJ",
+          "name": "Methane Correction Factor for project anaerobic wastewater treatment process",
+          "unit": "-",
+          "value": "0.80",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "CFE",
+          "name": "Methane capture efficiency of the anaerobic wastewater treatment process of the project",
+          "unit": "-",
+          "value": "0.90",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "UF_PJ",
+          "name": "Model correction factor for uncertainty of project anaerobic wastewater treatment process",
+          "unit": "-",
+          "value": "1.12",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "FE",
+          "name": "Flare efficiency",
+          "unit": "-",
+          "value": "0.5",
+          "source": "Open Flare Efficiency 0.50"
+        },
+        {
+          "id": "NCV_LPG",
+          "name": "Net Calorific Value of fossil fuel type Liquefied Petroleum Gas",
+          "unit": "MJ/kg",
+          "value": "49.30",
+          "source": "Option 3, Energy Statistics Report of Thailand, Ministry of Energy"
+        },
+        {
+          "id": "EF_CO2,LPG",
+          "name": "GHG emission factor from combustion of fossil fuel type Liquefied Petroleum Gas",
+          "unit": "kgCO2/TJ",
+          "value": "63100",
+          "source": "Table 1.4 2006 IPCC Guidelines for National GHG Inventories"
+        }
+      ],
+      "verifiedCreditsRequested": 54367,
+      "verificationCreditingPeriod": "1 April 2024 - 31 March 2025"
+    },
+    "fr": {
+      "projectName": "Modification de la station d'épuration des eaux usées pour l'utilisation en biogaz chez Thai Eastern Bio Power Co.,ltd.",
+      "projectType": "Gestion des eaux usées industrielles",
+      "projectLocation": "188 Moo 2, Khao Sok, Nong Yai, Chonburi 20190",
+      "tverMethodology": "T-VER-METH-WM-01",
+      "projectProponent": "Thai Eastern Bio Power Co.,ltd.",
+      "estimatedReductions": 396872,
+      "monitoringParameters": [
+        {
+          "id": "GWP_CH4",
+          "name": "Potentiel de réchauffement global du méthane",
+          "unit": "tCO2e/tCH4",
+          "source": "Annonce de la TGO sur le potentiel de réchauffement global pour les projets T-VER",
+          "expectedRange": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        {
+          "id": "EF_EC,y",
+          "name": "Facteur d'émission du réseau l'année y",
+          "unit": "tCO2/MWh",
+          "source": "Rapport sur le facteur d'émission du réseau par la TGO",
+          "expectedRange": {
+            "max": 0.4857,
+            "min": 0.4857
+          }
+        },
+        {
+          "id": "Q_ww,PJ,y",
+          "name": "Quantité d'eaux usées entrant dans le système de traitement l'année y",
+          "unit": "m3/year",
+          "source": "Rapport de mesure ou calcul des eaux usées générées",
+          "expectedRange": {
+            "max": 158882,
+            "min": 142727
+          }
+        },
+        {
+          "id": "COD_inf,PJ,y",
+          "name": "COD moyen des eaux usées entrant dans le processus de traitement anaérobie l'année y",
+          "unit": "mg/l",
+          "source": "Rapport d'analyse du laboratoire central",
+          "expectedRange": {
+            "max": 91847.67,
+            "min": 85851.33
+          }
+        },
+        {
+          "id": "COD_eff,PJ,y",
+          "name": "COD moyen de l'eau traversant le processus de traitement anaérobie l'année y",
+          "unit": "mg/l",
+          "source": "Rapport d'analyse du laboratoire central",
+          "expectedRange": {
+            "max": 2026.96,
+            "min": 1980.52
+          }
+        },
+        {
+          "id": "V_CH4,biogas,y",
+          "name": "Quantité de méthane entrant dans le système de torchère l'année y",
+          "unit": "tCH4/year",
+          "source": "Rapport de mesure ou rapport de calcul",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "FC_PJ,LPG,y",
+          "name": "Quantité de combustible fossile (LPG) utilisée pour le fonctionnement du projet l'année y",
+          "unit": "Kg/year",
+          "source": "Rapport d'utilisation des combustibles fossiles du projet",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "EC_PJ,y",
+          "name": "Quantité d'électricité du réseau utilisée pour le fonctionnement du projet l'année y",
+          "unit": "kWh/year",
+          "source": "Rapport de mesure",
+          "expectedRange": {
+            "max": 768100.03,
+            "min": 141660
+          }
+        }
+      ],
+      "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+      "tverMethodologyVersion": "Version 06",
+      "nonMonitoringParameters": [
+        {
+          "id": "MCF_BL",
+          "name": "Facteur de correction du méthane pour le processus de traitement anaérobie des eaux usées de référence",
+          "unit": "-",
+          "value": "0.80",
+          "source": "Page 6 AMS-III.H. : Récupération du méthane dans le traitement des eaux usées version 16"
+        },
+        {
+          "id": "UF_BL",
+          "name": "Facteur de correction du modèle pour l'incertitude du processus de traitement anaérobie des eaux usées de référence",
+          "unit": "-",
+          "value": "0.89",
+          "source": "Page 8 AMS-III.H. : Récupération du méthane dans le traitement des eaux usées version 16"
+        },
+        {
+          "id": "B_o",
+          "name": "Capacité de production de méthane du processus de traitement anaérobie des eaux usées",
+          "unit": "kgCH4/kg COD removal",
+          "value": "0.25",
+          "source": "Page 30 ACM0014 : Traitement des eaux usées version 6.0"
+        },
+        {
+          "id": "MCF_PJ",
+          "name": "Facteur de correction du méthane pour le processus de traitement anaérobie des eaux usées du projet",
+          "unit": "-",
+          "value": "0.80",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "CFE",
+          "name": "Efficacité de captage du méthane du processus de traitement anaérobie des eaux usées du projet",
+          "unit": "-",
+          "value": "0.90",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "UF_PJ",
+          "name": "Facteur de correction du modèle pour l'incertitude du processus de traitement anaérobie des eaux usées du projet",
+          "unit": "-",
+          "value": "1.12",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "FE",
+          "name": "Efficacité de la torchère",
+          "unit": "-",
+          "value": "0.5",
+          "source": "Efficacité de la torchère ouverte 0.50"
+        },
+        {
+          "id": "NCV_LPG",
+          "name": "Pouvoir calorifique net du combustible fossile de type gaz de pétrole liquéfié",
+          "unit": "MJ/kg",
+          "value": "49.30",
+          "source": "Option 3, Rapport sur les statistiques énergétiques de la Thaïlande, Ministère de l'Énergie"
+        },
+        {
+          "id": "EF_CO2,LPG",
+          "name": "Facteur d'émission de GES issu de la combustion du combustible fossile de type gaz de pétrole liquéfié",
+          "unit": "kgCO2/TJ",
+          "value": "63100",
+          "source": "Tableau 1.4 2006 IPCC Guidelines for National GHG Inventories"
+        }
+      ],
+      "verifiedCreditsRequested": 54367,
+      "verificationCreditingPeriod": "1 April 2024 - 31 March 2025"
+    },
+    "jp": {
+      "projectName": "Thai Eastern Bio Power Co.,ltd.におけるバイオガス利用のための廃水処理プラント改修",
+      "projectType": "産業廃水管理",
+      "projectLocation": "チョンブリー県ノーンヤイ郡カオソック Moo 2 188 20190",
+      "tverMethodology": "T-VER-METH-WM-01",
+      "projectProponent": "Thai Eastern Bio Power Co.,ltd.",
+      "estimatedReductions": 396872,
+      "monitoringParameters": [
+        {
+          "id": "GWP_CH4",
+          "name": "メタンの地球温暖化係数",
+          "unit": "tCO2e/tCH4",
+          "source": "T-VERプロジェクトの地球温暖化係数に関するTGOの発表",
+          "expectedRange": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        {
+          "id": "EF_EC,y",
+          "name": "年yのグリッド排出係数",
+          "unit": "tCO2/MWh",
+          "source": "TGOによるグリッド排出係数報告書",
+          "expectedRange": {
+            "max": 0.4857,
+            "min": 0.4857
+          }
+        },
+        {
+          "id": "Q_ww,PJ,y",
+          "name": "年yに処理システムに流入する廃水量",
+          "unit": "m3/year",
+          "source": "発生した廃水量の測定報告書または計算書",
+          "expectedRange": {
+            "max": 158882,
+            "min": 142727
+          }
+        },
+        {
+          "id": "COD_inf,PJ,y",
+          "name": "年yに嫌気性処理プロセスに流入する廃水の平均COD",
+          "unit": "mg/l",
+          "source": "中央研究所の分析報告書",
+          "expectedRange": {
+            "max": 91847.67,
+            "min": 85851.33
+          }
+        },
+        {
+          "id": "COD_eff,PJ,y",
+          "name": "年yに嫌気性処理プロセスを通過した水の平均COD",
+          "unit": "mg/l",
+          "source": "中央研究所の分析報告書",
+          "expectedRange": {
+            "max": 2026.96,
+            "min": 1980.52
+          }
+        },
+        {
+          "id": "V_CH4,biogas,y",
+          "name": "年yにフレアシステムに流入するメタンの量",
+          "unit": "tCH4/year",
+          "source": "測定報告書または計算報告書",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "FC_PJ,LPG,y",
+          "name": "年yのプロジェクト運営に使用された化石燃料（LPG）の量",
+          "unit": "Kg/year",
+          "source": "プロジェクト化石燃料使用量報告書",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "EC_PJ,y",
+          "name": "年yのプロジェクト運営に使用されたグリッド電力量",
+          "unit": "kWh/year",
+          "source": "測定報告書",
+          "expectedRange": {
+            "max": 768100.03,
+            "min": 141660
+          }
+        }
+      ],
+      "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+      "tverMethodologyVersion": "Version 06",
+      "nonMonitoringParameters": [
+        {
+          "id": "MCF_BL",
+          "name": "ベースライン嫌気性廃水処理プロセスのメタン補正係数",
+          "unit": "-",
+          "value": "0.80",
+          "source": "Page 6 AMS-III.H. : 廃水処理におけるメタン回収 version 16"
+        },
+        {
+          "id": "UF_BL",
+          "name": "ベースライン嫌気性廃水処理プロセスの不確実性に関するモデル補正係数",
+          "unit": "-",
+          "value": "0.89",
+          "source": "Page 8 AMS-III.H. : 廃水処理におけるメタン回収 version 16"
+        },
+        {
+          "id": "B_o",
+          "name": "嫌気性廃水処理プロセスのメタン生成能力",
+          "unit": "kgCH4/kg COD removal",
+          "value": "0.25",
+          "source": "Page 30 ACM0014 : 廃水処理 version 6.0"
+        },
+        {
+          "id": "MCF_PJ",
+          "name": "プロジェクト嫌気性廃水処理プロセスのメタン補正係数",
+          "unit": "-",
+          "value": "0.80",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "CFE",
+          "name": "プロジェクトの嫌気性廃水処理プロセスにおけるメタン捕捉効率",
+          "unit": "-",
+          "value": "0.90",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "UF_PJ",
+          "name": "プロジェクト嫌気性廃水処理プロセスの不確実性に関するモデル補正係数",
+          "unit": "-",
+          "value": "1.12",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "FE",
+          "name": "フレア効率",
+          "unit": "-",
+          "value": "0.5",
+          "source": "オープンフレア効率 0.50"
+        },
+        {
+          "id": "NCV_LPG",
+          "name": "化石燃料（液化石油ガス）の真発熱量",
+          "unit": "MJ/kg",
+          "value": "49.30",
+          "source": "オプション3、タイエネルギー省 エネルギー統計報告書"
+        },
+        {
+          "id": "EF_CO2,LPG",
+          "name": "化石燃料（液化石油ガス）の燃焼による温室効果ガス排出係数",
+          "unit": "kgCO2/TJ",
+          "value": "63100",
+          "source": "2006年IPCC国別温室効果ガスインベントリガイドライン 表1.4"
+        }
+      ],
+      "verifiedCreditsRequested": 54367,
+      "verificationCreditingPeriod": "1 April 2024 - 31 March 2025"
+    },
+    "th": {
+      "projectName": "โครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำไปผลิตก๊าซชีวภาพ โดย บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด",
+      "projectType": "การจัดการน้ำเสียอุตสาหกรรม",
+      "projectLocation": "เลขที่ 188 หมู่ที่ 2 ตำบลเขาซก อำเภอหนองใหญ่ จังหวัดชลบุรี 20190",
+      "tverMethodology": "T-VER-METH-WM-01",
+      "projectProponent": "บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด",
+      "estimatedReductions": 396872,
+      "monitoringParameters": [
+        {
+          "id": "GWP_CH4",
+          "name": "ศักยภาพในการทำให้เกิดภาวะโลกร้อนของก๊าซมีเทน",
+          "unit": "tCO2e/tCH4",
+          "source": "ประกาศค่าศักยภาพในการทำให้เกิดภาวะโลกร้อน (Global Warming Potential: GWP) สำหรับโครงการ T-VER ฉบับล่าสุด ประกาศเมื่อวันที่ 27 ตุลาคม 2564",
+          "expectedRange": {
+            "max": 28,
+            "min": 28
+          }
+        },
+        {
+          "id": "EF_EC,y",
+          "name": "ค่าการปล่อยก๊าซเรือนกระจกจากระบบสายส่งสำหรับผู้ใช้ไฟฟ้า ในปี y",
+          "unit": "tCO2/MWh",
+          "source": "ข้อมูลจากรายงานค่าการปล่อยก๊าซเรือนกระจก (Emission Factor) จากระบบสายส่งและจากการผลิตความร้อนสำหรับโครงการและกิจกรรมลดก๊าซเรือนกระจกที่ประกาศโดย อบก.",
+          "expectedRange": {
+            "max": 0.4857,
+            "min": 0.4857
+          }
+        },
+        {
+          "id": "Q_ww,PJ,y",
+          "name": "ปริมาณน้ำเสียที่เข้าสู่ระบบบำบัดในปี y",
+          "unit": "m3/year",
+          "source": "รายงานการตรวจวัดหรือรายการคำนวณปริมาณน้ำเสียที่เกิดขึ้น",
+          "expectedRange": {
+            "max": 158882,
+            "min": 142727
+          }
+        },
+        {
+          "id": "COD_inf,PJ,y",
+          "name": "ค่าเฉลี่ย COD ของน้ำเสียที่เข้าสู่กระบวนการบำบัดน้ำเสียแบบไร้อากาศ ในปี y",
+          "unit": "mg/l",
+          "source": "รายงานการตรวจวิเคราะห์จากห้องปฏิบัติการกลาง",
+          "expectedRange": {
+            "max": 91847.67,
+            "min": 85851.33
+          }
+        },
+        {
+          "id": "COD_eff,PJ,y",
+          "name": "ค่าเฉลี่ย COD ของน้ำที่ผ่านกระบวนการบำบัดน้ำเสียแบบไร้อากาศ ในปี y",
+          "unit": "mg/l",
+          "source": "รายงานการตรวจวิเคราะห์จากห้องปฏิบัติการกลาง",
+          "expectedRange": {
+            "max": 2026.96,
+            "min": 1980.52
+          }
+        },
+        {
+          "id": "V_CH4,biogas,y",
+          "name": "ปริมาณมีเทนที่เข้าสู่ระบบเผาทำลาย ในปี y",
+          "unit": "tCH4/year",
+          "source": "รายงานการตรวจวัดหรือรายงานการคำนวณ",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "FC_PJ,LPG,y",
+          "name": "ปริมาณการใช้เชื้อเพลิงฟอสซิลประเภทก๊าซปิโตรเลียมเหลว สำหรับการดำเนินโครงการ ในปี y",
+          "unit": "Kg/year",
+          "source": "รายงานปริมาณการใช้เชื้อเพลิงฟอสซิลของโครงการ",
+          "expectedRange": {
+            "max": 0,
+            "min": 0
+          }
+        },
+        {
+          "id": "EC_PJ,y",
+          "name": "ปริมาณการใช้พลังงานไฟฟ้าจากระบบสายส่งในการดำเนินโครงการ ในปี y",
+          "unit": "kWh/year",
+          "source": "รายงานการตรวจวัด",
+          "expectedRange": {
+            "max": 768100.03,
+            "min": 141660
+          }
+        }
+      ],
+      "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+      "tverMethodologyVersion": "Version 06",
+      "nonMonitoringParameters": [
+        {
+          "id": "MCF_BL",
+          "name": "ค่า Methane Correction Factor ของกระบวนการบำบัดน้ำเสียแบบไร้อากาศในกรณีฐาน",
+          "unit": "-",
+          "value": "0.80",
+          "source": "หน้า 6 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "UF_BL",
+          "name": "ค่า Model correction factor สำหรับความไม่แน่นอนของกระบวนการบำบัดน้ำเสียแบบไร้อากาศในกรณีฐาน",
+          "unit": "-",
+          "value": "0.89",
+          "source": "หน้า 8 AMS-III.H. : Methane recovery in wastewater treatment version 16"
+        },
+        {
+          "id": "B_o",
+          "name": "อัตราการสร้างก๊าซมีเทนของกระบวนการบำบัดน้ำเสียแบบไร้อากาศ",
+          "unit": "kgCH4/kg COD removal",
+          "value": "0.25",
+          "source": "หน้า 30 ACM0014 : Treatment of Wastewater version 6.0"
+        },
+        {
+          "id": "MCF_PJ",
+          "name": "ค่า Methane Correction Factor สำหรับกระบวนการบำบัดน้ำเสียแบบไร้อากาศของโครงการ",
+          "unit": "-",
+          "value": "0.80",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "CFE",
+          "name": "ประสิทธิภาพของระบบกักเก็บก๊าซมีเทนสำหรับกระบวนการบำบัดน้ำเสียแบบไร้อากาศของโครงการ",
+          "unit": "-",
+          "value": "0.90",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "UF_PJ",
+          "name": "ค่า Model correction factor สำหรับความไม่แน่นอนของกระบวนการบำบัดน้ำเสียแบบไร้อากาศของโครงการ",
+          "unit": "-",
+          "value": "1.12",
+          "source": "AMS-III.H."
+        },
+        {
+          "id": "FE",
+          "name": "ค่าประสิทธิภาพในการเผาทำลายก๊าซมีเทนของระบบเผาทำลาย",
+          "unit": "-",
+          "value": "0.5",
+          "source": "Open Flare Efficiency 0.50"
+        },
+        {
+          "id": "NCV_LPG",
+          "name": "ค่าความร้อนสุทธิ (Net Calorific Value) ของเชื้อเพลิงฟอสซิลประเภท ก๊าซปิโตรเลียมเหลว",
+          "unit": "MJ/kg",
+          "value": "49.30",
+          "source": "ทางเลือกที่ 3 รายงานสถิติพลังงานของประเทศไทย กระทรวงพลังงาน"
+        },
+        {
+          "id": "EF_CO2,LPG",
+          "name": "ค่าการปล่อยก๊าซเรือนกระจกจากการเผาไหม้เชื้อเพลิงฟอสซิลประเภท ก๊าซปิโตรเลียมเหลว",
+          "unit": "kgCO2/TJ",
+          "value": "63100",
+          "source": "ตารางที่ 1.4 2006 IPCC Guidelines for National GHG Inventories"
+        }
+      ],
+      "verifiedCreditsRequested": 54367,
+      "verificationCreditingPeriod": "1 เมษายน 2567 - 31 มีนาคม 2568"
+    },
+    "stations": [
+      {
+        "lat": 13.07775,
+        "lng": 101.392389,
+        "station_code": "เลขที่ 188 หมู่ที่ 2 ตำบลเขาซก อำเภอหนองใหญ่ จังหวัดชลบุรี 20190",
+        "station_name": "โครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำไปผลิตก๊าซชีวภาพ โดย บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด"
+      }
+    ],
+    "sourceFiles": [
+      {
+        "blobUrl": "https://vekocrmlnonprod.blob.core.windows.net/vekceroocrinput/gemini_text_file_2026-03-16-14-57-57-671803_eec480e6-21dd-4a84-8a8e-4bd530baf770.pdf",
+        "fileName": "Monitoring Report (MR).pdf"
+      },
+      {
+        "blobUrl": "https://vekocrmlnonprod.blob.core.windows.net/vekceroocrinput/gemini_text_file_2026-03-16-14-57-58-378945_405320eb-1629-4b5d-950b-63beb3193dc4.pdf",
+        "fileName": "Validation Report.pdf"
+      },
+      {
+        "blobUrl": "https://vekocrmlnonprod.blob.core.windows.net/vekceroocrinput/gemini_text_file_2026-03-16-15-02-13-568205_f1cd7dab-d137-4c19-9cf4-4ae0cb751f10.jpg",
+        "fileName": "GHG calculation_CSV.csv"
+      }
+    ],
+    "verification": {
+      "de": {
+        "generalInfo": {
+          "creditOwnership": "Die Emissionsgutschriften sind Eigentum der Thai Eastern Bio Power Co.,ltd.",
+          "scopeAndCriteria": "Verifizierung gemäß der Methodik T-VER-METH-WM-01 Version 06 und den Anforderungen der Thailand Greenhouse Gas Management Organization (TGO).",
+          "monitoringApproach": [
+            {
+              "topic": "Messung des zufließenden Abwasservolumens",
+              "notesOrChanges": "Es werden Durchflussmesser mit kontinuierlicher Datenaufzeichnung verwendet.",
+              "verificationResult": "Konform"
+            },
+            {
+              "topic": "Messung der COD-Werte im Abwasser",
+              "notesOrChanges": "Analysiert von einem zertifizierten Standardlabor.",
+              "verificationResult": "Konform"
+            },
+            {
+              "topic": "Messung des Stromverbrauchs",
+              "notesOrChanges": "Basierend auf Rechnungen des Stromversorgers und Projektzählern.",
+              "verificationResult": "Konform"
+            },
+            {
+              "topic": "Messung des Biogasvolumens",
+              "notesOrChanges": "Das dem Abfackelsystem zugeführte Methanvolumen wird genau erfasst.",
+              "verificationResult": "Konform"
+            }
+          ],
+          "verificationPurpose": "Zur Verifizierung der Treibhausgasemissionsminderungen des Projekts zur Modifikation der Abwasserbehandlungsanlage zur Nutzung als Biogas bei der Thai Eastern Bio Power Co.,ltd.",
+          "projectActivitySummary": "Modifikation eines Abwasserbehandlungssystems zur Abscheidung von Methangas für die Nutzung als erneuerbare Energie.",
+          "postRegistrationChanges": "Keine Änderungen nach der Registrierung.",
+          "assuranceLevelAndMateriality": "Limited Assurance-Level mit einer Wesentlichkeitsschwelle von 5%."
+        },
+        "projectDetails": {
+          "location": "Thai Eastern Bio Power Co.,ltd.",
+          "ghgAmountRequested": "54,367 tCO2e",
+          "verificationRequestNo": "1",
+          "projectCreditingPeriod": "01/04/2022 - 31/03/2029",
+          "verificationCreditingPeriod": "01/04/2024 - 31/03/2025"
+        },
+        "nonConformities": [],
+        "verifiedCredits": 54367,
+        "leakageEmissions": 0,
+        "projectEmissions": 8251.21,
+        "baselineEmissions": 62619.3,
+        "verificationScore": 100,
+        "verificationFinding": "Basierend auf der Verifizierung des Projekts zur Modifikation der Abwasserbehandlungsanlage zur Nutzung als Biogas bei der Thai Eastern Bio Power Co.,ltd. für den Betriebszeitraum vom 1 April 2024 bis 31 March 2025 stellte das Verifizierungsteam fest, dass die Baseline-Emissionen (BEy) 62,619.30 tCO2e, die Projektemissionen (PEy) 8,251.21 tCO2e und die Leakage-Emissionen (LEy) 0 tCO2e betragen. Folglich belaufen sich die verifizierten Emissionsminderungen (ERy) auf 54,367 tCO2e. Die Berechnungen und Monitoringverfahren entsprechen strikt der Methodik T-VER-METH-WM-01 Version 06. Alle bereitgestellten Daten sind gemäß den TGO-Standards genau, vollständig und nachvollziehbar.",
+        "verificationProcess": {
+          "riskAssessment": [
+            {
+              "parameter": "Volumen des in das Behandlungssystem eintretenden Abwassers (Q_ww,PJ,y)",
+              "controlRisk": "Standard-Durchflussmesser sind installiert und werden regelmäßig gewartet.",
+              "inherentRisk": "Hohes Risiko aufgrund von Schwankungen im Abwasservolumen in Abhängigkeit von Produktionsprozessen und Rohstoffmengen.",
+              "significance": "Hoch",
+              "detectionRisk": "Daten werden von den Systembetreibern aufgezeichnet und überprüft, wodurch das Risiko unentdeckter Fehler gering gehalten wird."
+            },
+            {
+              "parameter": "Durchschnittlicher COD des zufließenden Abwassers (COD_inf,PJ,y)",
+              "controlRisk": "Proben werden zur Analyse an ein zertifiziertes Zentrallabor gesendet.",
+              "inherentRisk": "Die COD-Konzentration kann im Laufe der Zeit je nach Rohstoffqualität variieren.",
+              "significance": "Mittel",
+              "detectionRisk": "Klare und nachvollziehbare Analyseberichte sind verfügbar."
+            },
+            {
+              "parameter": "Netzstromverbrauch (EC_PJ,y)",
+              "controlRisk": "Die Daten stützen sich auf Rechnungen der Versorgungsunternehmen, die sehr genau und zuverlässig sind.",
+              "inherentRisk": "Der Stromverbrauch ist basierend auf der aktiven Maschinenkapazität relativ stabil.",
+              "significance": "Niedrig",
+              "detectionRisk": "Daten können leicht mit Finanzdokumenten und Zähleraufzeichnungen abgeglichen werden."
+            }
+          ],
+          "monitoringReportReview": {
+            "rows": [
+              {
+                "detail": "Konsistenz der Mess- und Datenerfassungsverfahren",
+                "finding": "Übereinstimmend mit dem Project Design Document (PDD)",
+                "reference": "Monitoringbericht"
+              },
+              {
+                "detail": "Vollständigkeit der Berechnungsdaten",
+                "finding": "Daten sind für den Verifizierungszeitraum vollständig",
+                "reference": "Monitoringbericht"
+              },
+              {
+                "detail": "Genauigkeit der Berechnung der Baseline-Emissionen",
+                "finding": "Korrekt berechnet gemäß den Gleichungen der Methodik",
+                "reference": "GHG-Berechnungsblatt"
+              },
+              {
+                "detail": "Genauigkeit der Berechnung der Projektemissionen",
+                "finding": "Korrekt berechnet gemäß den Gleichungen der Methodik",
+                "reference": "GHG-Berechnungsblatt"
+              },
+              {
+                "detail": "Genauigkeit der Berechnung der Leakage-Emissionen",
+                "finding": "Korrekt berechnet und keine Leakage-Emissionen identifiziert",
+                "reference": "GHG-Berechnungsblatt"
+              },
+              {
+                "detail": "Kalibrierung der Messgeräte",
+                "finding": "Geräte wurden gemäß dem festgelegten Plan kalibriert",
+                "reference": "Kalibrierzertifikate"
+              },
+              {
+                "detail": "Datenmanagement und Informationssysteme",
+                "finding": "Angemessenes und nachvollziehbares Datenmanagementsystem vorhanden",
+                "reference": "Betriebsaufzeichnungen"
+              },
+              {
+                "detail": "Qualitätssicherung und Qualitätskontrolle (QA/QC)",
+                "finding": "Konsistent mit dem im PDD spezifizierten Plan umgesetzt",
+                "reference": "Monitoringbericht"
+              },
+              {
+                "detail": "Konsistenz der nicht überwachten Parameter",
+                "finding": "Standardwerte verwendet wie im PDD und der Methodik spezifiziert",
+                "reference": "Project Design Document (PDD)"
+              }
+            ],
+            "leadIn": "Die Verifizierung wurde in Übereinstimmung mit den Zertifizierungskriterien für Emissionsgutschriften und der Methodik T-VER-METH-WM-01 Version 06 durchgeführt, im Detail wie folgt:"
+          },
+          "dataAndActivitiesVerification": "Das Verifizierungsteam hat Dokumente, Betriebsaufzeichnungen sowie Berechnungsberichte überprüft und relevante Mitarbeiter befragt. Die zur Bewertung der Treibhausgasemissionsminderungen herangezogenen Daten wurden gemäß den Standardanforderungen als genau, vollständig und nachvollziehbar erachtet."
+        },
+        "verificationStatement": "Das Verifizierungsteam bescheinigt hiermit, dass das Projekt zur Modifikation der Abwasserbehandlungsanlage zur Nutzung als Biogas bei der Thai Eastern Bio Power Co.,ltd. das Monitoring und die Berichterstattung in Übereinstimmung mit den TGO-Richtlinien und der Methodik T-VER-METH-WM-01 Version 06 umfassend und genau umgesetzt hat. Das Projekt unterhält ein zuverlässiges Datenmanagementsystem. Die beantragten Emissionsgutschriften für den Anrechnungszeitraum vom 1 April 2024 bis 31 March 2025 wurden gründlich verifiziert und auf 54,367 Tonnen Kohlendioxidäquivalent (tCO2e) bestätigt, wobei keine wesentlichen Nichtkonformitäten festgestellt wurden.",
+        "opportunitiesForImprovement": [
+          "Eine regelmäßige Kalibrierung der Abwasserdurchflussmesser gemäß dem geplanten Zeitplan wird empfohlen, um Messabweichungen zu minimieren.",
+          "Die Installation von automatisierten Datenloggern zur kontinuierlichen Datenaufzeichnung sollte in Betracht gezogen werden, um die Effizienz des Datenmanagements zu verbessern."
+        ]
+      },
+      "en": {
+        "generalInfo": {
+          "creditOwnership": "The carbon credits are owned by Thai Eastern Bio Power Co.,ltd.",
+          "scopeAndCriteria": "Verification according to the T-VER-METH-WM-01 Version 06 methodology and the requirements of the Thailand Greenhouse Gas Management Organization (TGO).",
+          "monitoringApproach": [
+            {
+              "topic": "Measurement of influent wastewater volume",
+              "notesOrChanges": "Flow meters with continuous data recording are utilized.",
+              "verificationResult": "Conform"
+            },
+            {
+              "topic": "Measurement of wastewater COD levels",
+              "notesOrChanges": "Analyzed by a certified standard laboratory.",
+              "verificationResult": "Conform"
+            },
+            {
+              "topic": "Measurement of electricity consumption",
+              "notesOrChanges": "Based on electricity utility invoices and project meters.",
+              "verificationResult": "Conform"
+            },
+            {
+              "topic": "Measurement of biogas volume",
+              "notesOrChanges": "Methane volume sent to the flaring system is accurately recorded.",
+              "verificationResult": "Conform"
+            }
+          ],
+          "verificationPurpose": "To verify the greenhouse gas emission reductions of the Wastewater treatment plant modification for Utilization to biogas at Thai Eastern Bio Power Co.,ltd. project.",
+          "projectActivitySummary": "Modification of a wastewater treatment system to capture methane gas for utilization as renewable energy.",
+          "postRegistrationChanges": "No post-registration changes.",
+          "assuranceLevelAndMateriality": "Limited Assurance level with a 5% materiality threshold."
+        },
+        "projectDetails": {
+          "location": "Thai Eastern Bio Power Co.,ltd.",
+          "ghgAmountRequested": "54,367 tCO2e",
+          "verificationRequestNo": "1",
+          "projectCreditingPeriod": "01/04/2022 - 31/03/2029",
+          "verificationCreditingPeriod": "01/04/2024 - 31/03/2025"
+        },
+        "nonConformities": [],
+        "verifiedCredits": 54367,
+        "leakageEmissions": 0,
+        "projectEmissions": 8251.21,
+        "baselineEmissions": 62619.3,
+        "verificationScore": 100,
+        "verificationFinding": "Based on the verification of the Wastewater treatment plant modification for Utilization to biogas at Thai Eastern Bio Power Co.,ltd. project for the operational period from 1 April 2024 to 31 March 2025, the verification team found that the baseline emissions (BEy) are 62,619.30 tCO2e, project emissions (PEy) are 8,251.21 tCO2e, and leakage emissions (LEy) are 0 tCO2e. Consequently, the verified emission reductions (ERy) amount to 54,367 tCO2e. The calculations and monitoring procedures strictly comply with the T-VER-METH-WM-01 Version 06 methodology. All data provided are accurate, complete, and traceable according to TGO standards.",
+        "verificationProcess": {
+          "riskAssessment": [
+            {
+              "parameter": "Volume of wastewater entering the treatment system (Q_ww,PJ,y)",
+              "controlRisk": "Standard flow meters are installed and maintained regularly.",
+              "inherentRisk": "High risk due to fluctuations in wastewater volume depending on production processes and raw material quantities.",
+              "significance": "High",
+              "detectionRisk": "Data is recorded and reviewed by system operators, keeping the risk of undetected errors low."
+            },
+            {
+              "parameter": "Average COD of influent wastewater (COD_inf,PJ,y)",
+              "controlRisk": "Samples are sent for analysis at a certified central laboratory.",
+              "inherentRisk": "COD concentration may vary based on raw material quality over time.",
+              "significance": "Medium",
+              "detectionRisk": "Clear and traceable analysis reports are available."
+            },
+            {
+              "parameter": "Grid electricity consumption (EC_PJ,y)",
+              "controlRisk": "Data relies on utility invoices which are highly accurate and reliable.",
+              "inherentRisk": "Electricity consumption is relatively stable based on active machinery capacity.",
+              "significance": "Low",
+              "detectionRisk": "Data can be easily cross-checked with financial documents and meter records."
+            }
+          ],
+          "monitoringReportReview": {
+            "rows": [
+              {
+                "detail": "Consistency of measurement and data collection procedures",
+                "finding": "Consistent with the Project Design Document (PDD)",
+                "reference": "Monitoring Report"
+              },
+              {
+                "detail": "Completeness of calculation data",
+                "finding": "Data is complete for the verification period",
+                "reference": "Monitoring Report"
+              },
+              {
+                "detail": "Accuracy of Baseline Emission calculation",
+                "finding": "Calculated correctly according to the methodology equations",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "Accuracy of Project Emission calculation",
+                "finding": "Calculated correctly according to the methodology equations",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "Accuracy of Leakage Emission calculation",
+                "finding": "Calculated correctly and no leakage emissions identified",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "Calibration of measuring equipment",
+                "finding": "Equipment calibrated according to the designated plan",
+                "reference": "Calibration Certificates"
+              },
+              {
+                "detail": "Data management and information systems",
+                "finding": "Appropriate and traceable data management system in place",
+                "reference": "Operational records"
+              },
+              {
+                "detail": "Quality assurance and quality control (QA/QC)",
+                "finding": "Implemented consistently with the plan specified in the PDD",
+                "reference": "Monitoring Report"
+              },
+              {
+                "detail": "Consistency of non-monitored parameters",
+                "finding": "Default values used as specified in the PDD and methodology",
+                "reference": "Project Design Document (PDD)"
+              }
+            ],
+            "leadIn": "The verification was conducted in accordance with the carbon credit certification criteria and the T-VER-METH-WM-01 Version 06 methodology, detailed as follows:"
+          },
+          "dataAndActivitiesVerification": "The verification team has reviewed documents, operational records, calculation reports, and interviewed relevant personnel. The data used to assess the greenhouse gas emission reductions was found to be accurate, complete, and traceable according to standard requirements."
+        },
+        "verificationStatement": "The verification team hereby certifies that the Wastewater treatment plant modification for Utilization to biogas at Thai Eastern Bio Power Co.,ltd. project has comprehensively and accurately implemented monitoring and reporting in accordance with TGO guidelines and the T-VER-METH-WM-01 Version 06 methodology. The project maintains a reliable data management system. The requested carbon credits for the crediting period from 1 April 2024 to 31 March 2025 have been thoroughly verified and confirmed to be 54,367 tonnes of carbon dioxide equivalent (tCO2e), with no material non-conformities identified.",
+        "opportunitiesForImprovement": [
+          "Regular calibration of wastewater flow meters according to the planned schedule is recommended to minimize measurement discrepancies.",
+          "The installation of automated data loggers for continuous data recording should be considered to enhance data management efficiency."
+        ]
+      },
+      "fr": {
+        "generalInfo": {
+          "creditOwnership": "Les crédits carbone sont la propriété de Thai Eastern Bio Power Co.,ltd.",
+          "scopeAndCriteria": "Vérification selon la méthodologie T-VER-METH-WM-01 Version 06 et les exigences de la Thailand Greenhouse Gas Management Organization (TGO).",
+          "monitoringApproach": [
+            {
+              "topic": "Mesure du volume d'eaux usées entrantes",
+              "notesOrChanges": "Des débitmètres avec enregistrement continu des données sont utilisés.",
+              "verificationResult": "Conforme"
+            },
+            {
+              "topic": "Mesure des niveaux de DCO des eaux usées",
+              "notesOrChanges": "Analysé par un laboratoire standard certifié.",
+              "verificationResult": "Conforme"
+            },
+            {
+              "topic": "Mesure de la consommation d'électricité",
+              "notesOrChanges": "Basé sur les factures du fournisseur d'électricité et les compteurs du projet.",
+              "verificationResult": "Conforme"
+            },
+            {
+              "topic": "Mesure du volume de biogaz",
+              "notesOrChanges": "Le volume de méthane envoyé au système de torchage est enregistré avec précision.",
+              "verificationResult": "Conforme"
+            }
+          ],
+          "verificationPurpose": "Vérifier les réductions d'émissions de gaz à effet de serre du projet de modification de la station d'épuration des eaux usées pour l'utilisation en biogaz chez Thai Eastern Bio Power Co.,ltd.",
+          "projectActivitySummary": "Modification d'un système de traitement des eaux usées pour capter le méthane en vue de son utilisation comme énergie renouvelable.",
+          "postRegistrationChanges": "Aucun changement après l'enregistrement.",
+          "assuranceLevelAndMateriality": "Niveau d'assurance limitée avec un seuil de matérialité de 5%."
+        },
+        "projectDetails": {
+          "location": "Thai Eastern Bio Power Co.,ltd.",
+          "ghgAmountRequested": "54,367 tCO2e",
+          "verificationRequestNo": "1",
+          "projectCreditingPeriod": "01/04/2022 - 31/03/2029",
+          "verificationCreditingPeriod": "01/04/2024 - 31/03/2025"
+        },
+        "nonConformities": [],
+        "verifiedCredits": 54367,
+        "leakageEmissions": 0,
+        "projectEmissions": 8251.21,
+        "baselineEmissions": 62619.3,
+        "verificationScore": 100,
+        "verificationFinding": "Sur la base de la vérification du projet de modification de la station d'épuration des eaux usées pour l'utilisation en biogaz chez Thai Eastern Bio Power Co.,ltd. pour la période opérationnelle du 1 avril 2024 au 31 mars 2025, l'équipe de vérification a constaté que les émissions de référence (BEy) sont de 62,619.30 tCO2e, les émissions du projet (PEy) sont de 8,251.21 tCO2e et les émissions de fuite (LEy) sont de 0 tCO2e. Par conséquent, les réductions d'émissions vérifiées (ERy) s'élèvent à 54,367 tCO2e. Les calculs et les procédures de suivi sont strictement conformes à la méthodologie T-VER-METH-WM-01 Version 06. Toutes les données fournies sont exactes, complètes et traçables selon les normes de la TGO.",
+        "verificationProcess": {
+          "riskAssessment": [
+            {
+              "parameter": "Volume d'eaux usées entrant dans le système de traitement (Q_ww,PJ,y)",
+              "controlRisk": "Des débitmètres standard sont installés et entretenus régulièrement.",
+              "inherentRisk": "Risque élevé en raison des fluctuations du volume des eaux usées selon les processus de production et les quantités de matières premières.",
+              "significance": "Élevée",
+              "detectionRisk": "Les données sont enregistrées et examinées par les opérateurs du système, maintenant le risque d'erreurs non détectées à un niveau faible."
+            },
+            {
+              "parameter": "DCO moyenne des eaux usées entrantes (COD_inf,PJ,y)",
+              "controlRisk": "Les échantillons sont envoyés pour analyse à un laboratoire central certifié.",
+              "inherentRisk": "La concentration de DCO peut varier en fonction de la qualité des matières premières au fil du temps.",
+              "significance": "Moyenne",
+              "detectionRisk": "Des rapports d'analyse clairs et traçables sont disponibles."
+            },
+            {
+              "parameter": "Consommation d'électricité du réseau (EC_PJ,y)",
+              "controlRisk": "Les données reposent sur les factures des services publics qui sont très précises et fiables.",
+              "inherentRisk": "La consommation d'électricité est relativement stable en fonction de la capacité des machines en activité.",
+              "significance": "Faible",
+              "detectionRisk": "Les données peuvent être facilement recoupées avec les documents financiers et les relevés de compteurs."
+            }
+          ],
+          "monitoringReportReview": {
+            "rows": [
+              {
+                "detail": "Cohérence des procédures de mesure et de collecte des données",
+                "finding": "Cohérent avec le document de conception du projet (PDD)",
+                "reference": "Rapport de suivi"
+              },
+              {
+                "detail": "Exhaustivité des données de calcul",
+                "finding": "Les données sont complètes pour la période de vérification",
+                "reference": "Rapport de suivi"
+              },
+              {
+                "detail": "Exactitude du calcul des émissions de référence",
+                "finding": "Calculé correctement selon les équations de la méthodologie",
+                "reference": "Feuille de calcul des GES"
+              },
+              {
+                "detail": "Exactitude du calcul des émissions du projet",
+                "finding": "Calculé correctement selon les équations de la méthodologie",
+                "reference": "Feuille de calcul des GES"
+              },
+              {
+                "detail": "Exactitude du calcul des émissions de fuite",
+                "finding": "Calculé correctement et aucune émission de fuite identifiée",
+                "reference": "Feuille de calcul des GES"
+              },
+              {
+                "detail": "Étalonnage des équipements de mesure",
+                "finding": "Équipement étalonné selon le plan défini",
+                "reference": "Certificats d'étalonnage"
+              },
+              {
+                "detail": "Gestion des données et systèmes d'information",
+                "finding": "Système de gestion des données approprié et traçable en place",
+                "reference": "Registres opérationnels"
+              },
+              {
+                "detail": "Assurance qualité et contrôle qualité (QA/QC)",
+                "finding": "Mis en œuvre conformément au plan spécifié dans le PDD",
+                "reference": "Rapport de suivi"
+              },
+              {
+                "detail": "Cohérence des paramètres non surveillés",
+                "finding": "Valeurs par défaut utilisées comme spécifié dans le PDD et la méthodologie",
+                "reference": "Document de conception du projet (PDD)"
+              }
+            ],
+            "leadIn": "La vérification a été menée conformément aux critères de certification des crédits carbone et à la méthodologie T-VER-METH-WM-01 Version 06, détaillés comme suit :"
+          },
+          "dataAndActivitiesVerification": "L'équipe de vérification a examiné les documents, les registres opérationnels, les rapports de calcul et a interrogé le personnel concerné. Les données utilisées pour évaluer les réductions d'émissions de gaz à effet de serre ont été jugées exactes, complètes et traçables conformément aux exigences de la norme."
+        },
+        "verificationStatement": "L'équipe de vérification certifie par la présente que le projet de modification de la station d'épuration des eaux usées pour l'utilisation en biogaz chez Thai Eastern Bio Power Co.,ltd. a mis en œuvre de manière exhaustive et précise le suivi et le reporting conformément aux directives de la TGO et à la méthodologie T-VER-METH-WM-01 Version 06. Le projet maintient un système de gestion des données fiable. Les crédits carbone demandés pour la période de crédit du 1 avril 2024 au 31 mars 2025 ont été minutieusement vérifiés et confirmés à 54,367 tonnes d'équivalent dioxyde de carbone (tCO2e), sans aucune non-conformité matérielle identifiée.",
+        "opportunitiesForImprovement": [
+          "Un étalonnage régulier des débitmètres d'eaux usées selon le calendrier prévu est recommandé pour minimiser les écarts de mesure.",
+          "L'installation d'enregistreurs de données automatisés pour l'enregistrement continu des données devrait être envisagée afin d'améliorer l'efficacité de la gestion des données."
+        ]
+      },
+      "jp": {
+        "generalInfo": {
+          "creditOwnership": "カーボンクレジットはThai Eastern Bio Power Co.,ltd.が所有している。",
+          "scopeAndCriteria": "T-VER-METH-WM-01 Version 06 方法論およびタイ温室効果ガス管理機構（TGO）の要件に基づく検証。",
+          "monitoringApproach": [
+            {
+              "topic": "流入廃水量の測定",
+              "notesOrChanges": "継続的なデータ記録が可能な流量計が使用されている。",
+              "verificationResult": "適合"
+            },
+            {
+              "topic": "廃水CODレベルの測定",
+              "notesOrChanges": "認定された標準試験所によって分析されている。",
+              "verificationResult": "適合"
+            },
+            {
+              "topic": "電力消費量の測定",
+              "notesOrChanges": "電力会社の請求書およびプロジェクトのメーターに基づく。",
+              "verificationResult": "適合"
+            },
+            {
+              "topic": "バイオガス量の測定",
+              "notesOrChanges": "フレアシステムに送られるメタン量が正確に記録されている。",
+              "verificationResult": "適合"
+            }
+          ],
+          "verificationPurpose": "Thai Eastern Bio Power Co.,ltd.におけるバイオガス利用のための廃水処理プラント改修プロジェクトの温室効果ガス排出削減量を検証すること。",
+          "projectActivitySummary": "再生可能エネルギーとして利用するためにメタンガスを回収する廃水処理システムの改修。",
+          "postRegistrationChanges": "登録後の変更なし。",
+          "assuranceLevelAndMateriality": "重要性の基準値を5%とする限定的保証（Limited Assurance）レベル。"
+        },
+        "projectDetails": {
+          "location": "Thai Eastern Bio Power Co.,ltd.",
+          "ghgAmountRequested": "54,367 tCO2e",
+          "verificationRequestNo": "1",
+          "projectCreditingPeriod": "01/04/2022 - 31/03/2029",
+          "verificationCreditingPeriod": "01/04/2024 - 31/03/2025"
+        },
+        "nonConformities": [],
+        "verifiedCredits": 54367,
+        "leakageEmissions": 0,
+        "projectEmissions": 8251.21,
+        "baselineEmissions": 62619.3,
+        "verificationScore": 100,
+        "verificationFinding": "1 April 2024 から 31 March 2025 までの運用期間における、Thai Eastern Bio Power Co.,ltd.のバイオガス利用のための廃水処理プラント改修プロジェクトの検証に基づき、検証チームは、ベースライン排出量（BEy）が 62,619.30 tCO2e、プロジェクト排出量（PEy）が 8,251.21 tCO2e、リーケージ排出量（LEy）が 0 tCO2e であることを確認した。その結果、検証済みの排出削減量（ERy）は 54,367 tCO2e となる。計算およびモニタリング手順は、T-VER-METH-WM-01 Version 06 方法論を厳密に遵守している。提供されたすべてのデータは、TGO基準に従って正確、完全、かつ追跡可能である。",
+        "verificationProcess": {
+          "riskAssessment": [
+            {
+              "parameter": "処理システムに流入する廃水量 (Q_ww,PJ,y)",
+              "controlRisk": "標準的な流量計が設置され、定期的に保守されている。",
+              "inherentRisk": "生産プロセスや原材料の量によって廃水量が変動するため、高リスクである。",
+              "significance": "高",
+              "detectionRisk": "データはシステムオペレーターによって記録およびレビューされ、検出されないエラーのリスクは低く抑えられている。"
+            },
+            {
+              "parameter": "流入廃水の平均COD (COD_inf,PJ,y)",
+              "controlRisk": "サンプルは認定された中央試験所に送られ、分析される。",
+              "inherentRisk": "時間の経過とともに原材料の品質に基づいてCOD濃度が変動する可能性がある。",
+              "significance": "中",
+              "detectionRisk": "明確で追跡可能な分析レポートが利用可能である。"
+            },
+            {
+              "parameter": "系統電力消費量 (EC_PJ,y)",
+              "controlRisk": "データは非常に正確で信頼性の高い電力会社の請求書に依存している。",
+              "inherentRisk": "稼働している機械の容量に基づき、電力消費量は比較的安定している。",
+              "significance": "低",
+              "detectionRisk": "データは財務書類やメーターの記録と容易に照合可能である。"
+            }
+          ],
+          "monitoringReportReview": {
+            "rows": [
+              {
+                "detail": "測定およびデータ収集手順の一貫性",
+                "finding": "プロジェクト設計書（PDD）と一致している",
+                "reference": "モニタリングレポート"
+              },
+              {
+                "detail": "計算データの完全性",
+                "finding": "検証期間のデータは完全である",
+                "reference": "モニタリングレポート"
+              },
+              {
+                "detail": "ベースライン排出量計算の正確性",
+                "finding": "方法論の計算式に従って正確に計算されている",
+                "reference": "GHG計算シート"
+              },
+              {
+                "detail": "プロジェクト排出量計算の正確性",
+                "finding": "方法論の計算式に従って正確に計算されている",
+                "reference": "GHG計算シート"
+              },
+              {
+                "detail": "リーケージ排出量計算の正確性",
+                "finding": "正確に計算されており、リーケージ排出は確認されていない",
+                "reference": "GHG計算シート"
+              },
+              {
+                "detail": "測定機器の校正",
+                "finding": "指定された計画に従って機器が校正されている",
+                "reference": "校正証明書"
+              },
+              {
+                "detail": "データ管理および情報システム",
+                "finding": "適切かつ追跡可能なデータ管理システムが導入されている",
+                "reference": "運用記録"
+              },
+              {
+                "detail": "品質保証および品質管理（QA/QC）",
+                "finding": "PDDに規定された計画と一貫して実施されている",
+                "reference": "モニタリングレポート"
+              },
+              {
+                "detail": "モニタリングされないパラメータの一貫性",
+                "finding": "PDDおよび方法論で指定されたデフォルト値が使用されている",
+                "reference": "プロジェクト設計書（PDD）"
+              }
+            ],
+            "leadIn": "検証は、カーボンクレジット認証基準および T-VER-METH-WM-01 Version 06 方法論に従って実施された。詳細は以下の通りである："
+          },
+          "dataAndActivitiesVerification": "検証チームは、文書、運用記録、計算レポートをレビューし、関係者へのインタビューを実施した。温室効果ガス排出削減量の評価に使用されたデータは、標準要件に従って正確、完全、かつ追跡可能であることが確認された。"
+        },
+        "verificationStatement": "検証チームは、Thai Eastern Bio Power Co.,ltd.のバイオガス利用のための廃水処理プラント改修プロジェクトが、TGOガイドラインおよび T-VER-METH-WM-01 Version 06 方法論に従って、モニタリングおよび報告を包括的かつ正確に実施していることをここに証明する。本プロジェクトは信頼性の高いデータ管理システムを維持している。1 April 2024 から 31 March 2025 までのクレジット期間に対する申請されたカーボンクレジットは徹底的に検証され、54,367 トンの二酸化炭素換算（tCO2e）であることが確認されており、重大な不適合は確認されなかった。",
+        "opportunitiesForImprovement": [
+          "測定の差異を最小限に抑えるため、計画されたスケジュールに従って廃水流量計の定期的な校正を行うことを推奨します。",
+          "データ管理の効率を向上させるため、継続的なデータ記録用の自動データロガーの設置を検討すべきです。"
+        ]
+      },
+      "th": {
+        "generalInfo": {
+          "creditOwnership": "กรรมสิทธิ์ของคาร์บอนเครดิตเป็นของ บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด",
+          "scopeAndCriteria": "ทวนสอบตามระเบียบวิธีการลดก๊าซเรือนกระจกภาคสมัครใจ T-VER-METH-WM-01 Version 06 และข้อกำหนดขององค์การบริหารจัดการก๊าซเรือนกระจก (องค์การมหาชน)",
+          "monitoringApproach": [
+            {
+              "topic": "การตรวจวัดปริมาณน้ำเสียที่เข้าสู่ระบบ",
+              "notesOrChanges": "ใช้มาตรวัดอัตราการไหลที่มีการบันทึกข้อมูลอย่างต่อเนื่อง",
+              "verificationResult": "สอดคล้อง"
+            },
+            {
+              "topic": "การตรวจวัดค่าความสกปรกของน้ำเสีย (COD)",
+              "notesOrChanges": "วิเคราะห์โดยห้องปฏิบัติการที่ได้รับการรับรองมาตรฐาน",
+              "verificationResult": "สอดคล้อง"
+            },
+            {
+              "topic": "การตรวจวัดปริมาณการใช้พลังงานไฟฟ้า",
+              "notesOrChanges": "อ้างอิงจากใบเสร็จรับเงินของการไฟฟ้าและมิเตอร์ของโครงการ",
+              "verificationResult": "สอดคล้อง"
+            },
+            {
+              "topic": "การตรวจวัดปริมาณก๊าซชีวภาพ",
+              "notesOrChanges": "มีการบันทึกปริมาณก๊าซมีเทนที่เข้าสู่ระบบเผาทำลายอย่างถูกต้อง",
+              "verificationResult": "สอดคล้อง"
+            }
+          ],
+          "verificationPurpose": "เพื่อทวนสอบปริมาณการลดการปล่อยก๊าซเรือนกระจกของโครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำไปผลิตก๊าซชีวภาพ โดย บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด",
+          "projectActivitySummary": "โครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำก๊าซมีเทนที่เกิดขึ้นไปใช้ประโยชน์เป็นพลังงานทดแทน",
+          "postRegistrationChanges": "ไม่มีการเปลี่ยนแปลงภายหลังการขึ้นทะเบียนโครงการ",
+          "assuranceLevelAndMateriality": "ระดับการสร้างความเชื่อมั่นแบบจำกัด (Limited Assurance) และระดับความมีสาระสำคัญที่ร้อยละ 5 (Materiality 5%)"
+        },
+        "projectDetails": {
+          "location": "บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด",
+          "ghgAmountRequested": "54,367 tCO2e",
+          "verificationRequestNo": "1",
+          "projectCreditingPeriod": "01/04/2565 - 31/03/2572",
+          "verificationCreditingPeriod": "01/04/2567 - 31/03/2568"
+        },
+        "nonConformities": [],
+        "verifiedCredits": 54367,
+        "leakageEmissions": 0,
+        "projectEmissions": 8251.21,
+        "baselineEmissions": 62619.3,
+        "verificationScore": 100,
+        "verificationFinding": "จากการทวนสอบโครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำไปผลิตก๊าซชีวภาพ โดย บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด ผู้ทวนสอบได้ตรวจสอบข้อมูลการดำเนินงานตั้งแต่วันที่ 1 เมษายน 2567 ถึง 31 มีนาคม 2568 พบว่าปริมาณการปล่อยก๊าซเรือนกระจกจากกรณีฐาน (BEy) เท่ากับ 62,619.30 tCO2e ปริมาณการปล่อยก๊าซเรือนกระจกจากการดำเนินโครงการ (PEy) เท่ากับ 8,251.21 tCO2e และไม่มีการปล่อยก๊าซเรือนกระจกนอกขอบเขตโครงการ (LEy = 0 tCO2e) ส่งผลให้ปริมาณการลดการปล่อยก๊าซเรือนกระจกที่ทวนสอบได้ (ERy) มีค่าเท่ากับ 54,367 tCO2e ซึ่งสอดคล้องกับระเบียบวิธีการ T-VER-METH-WM-01 Version 06 ข้อมูลทั้งหมดมีความถูกต้อง ครบถ้วน และสามารถสอบกลับได้ตามมาตรฐานที่ อบก. กำหนด",
+        "verificationProcess": {
+          "riskAssessment": [
+            {
+              "parameter": "ปริมาณน้ำเสียที่เข้าสู่ระบบบำบัด (Q_ww,PJ,y)",
+              "controlRisk": "มีการติดตั้งมิเตอร์วัดอัตราการไหลที่ได้มาตรฐานและมีการบำรุงรักษาอย่างสม่ำเสมอ",
+              "inherentRisk": "มีความเสี่ยงสูงเนื่องจากปริมาณน้ำเสียมีความผันผวนตามกระบวนการผลิตและปริมาณวัตถุดิบ",
+              "significance": "High",
+              "detectionRisk": "มีการจดบันทึกข้อมูลและสอบทานโดยผู้ควบคุมระบบ ทำให้ความเสี่ยงในการตรวจไม่พบข้อผิดพลาดอยู่ในระดับต่ำ"
+            },
+            {
+              "parameter": "ค่าเฉลี่ย COD ของน้ำเสียที่เข้าสู่กระบวนการบำบัด (COD_inf,PJ,y)",
+              "controlRisk": "มีการส่งตัวอย่างวิเคราะห์ในห้องปฏิบัติการกลางที่ได้มาตรฐาน",
+              "inherentRisk": "ความเข้มข้นของ COD อาจเปลี่ยนแปลงตามคุณภาพของวัตถุดิบในแต่ละช่วงเวลา",
+              "significance": "Medium",
+              "detectionRisk": "มีรายงานผลการวิเคราะห์ที่ชัดเจนและสามารถสอบกลับได้"
+            },
+            {
+              "parameter": "ปริมาณการใช้พลังงานไฟฟ้าจากระบบสายส่ง (EC_PJ,y)",
+              "controlRisk": "อ้างอิงข้อมูลจากใบแจ้งหนี้ของการไฟฟ้าซึ่งมีความแม่นยำและเชื่อถือได้สูง",
+              "inherentRisk": "การใช้ไฟฟ้าค่อนข้างคงที่ตามกำลังของเครื่องจักรที่ใช้งานจริง",
+              "significance": "Low",
+              "detectionRisk": "สามารถตรวจสอบเทียบเคียงกับเอกสารทางการเงินและบันทึกมิเตอร์ได้ง่าย"
+            }
+          ],
+          "monitoringReportReview": {
+            "rows": [
+              {
+                "detail": "ความสอดคล้องของวิธีดำเนินการตรวจวัดและเก็บรวบรวมข้อมูล",
+                "finding": "สอดคล้องกับเอกสารข้อเสนอโครงการ (PDD)",
+                "reference": "รายงานการติดตามผล (Monitoring Report)"
+              },
+              {
+                "detail": "ความครบถ้วนของข้อมูลที่ใช้ในการคำนวณ",
+                "finding": "ข้อมูลมีความครบถ้วนตามรอบระยะเวลาการทวนสอบ",
+                "reference": "รายงานการติดตามผล (Monitoring Report)"
+              },
+              {
+                "detail": "ความถูกต้องของการคำนวณการปล่อยก๊าซเรือนกระจกจากกรณีฐาน (Baseline Emission)",
+                "finding": "คำนวณถูกต้องตามสมการในระเบียบวิธีการ",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "ความถูกต้องของการคำนวณการปล่อยก๊าซเรือนกระจกจากการดำเนินโครงการ (Project Emission)",
+                "finding": "คำนวณถูกต้องตามสมการในระเบียบวิธีการ",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "ความถูกต้องของการคำนวณการปล่อยก๊าซเรือนกระจกนอกขอบเขตโครงการ (Leakage Emission)",
+                "finding": "คำนวณถูกต้องและไม่มีการปล่อยก๊าซเรือนกระจกนอกขอบเขต",
+                "reference": "GHG Calculation Sheet"
+              },
+              {
+                "detail": "การสอบเทียบเครื่องมือวัด",
+                "finding": "เครื่องมือวัดได้รับการสอบเทียบตามแผนงานที่กำหนด",
+                "reference": "ใบรายงานผลการสอบเทียบ (Calibration Certificate)"
+              },
+              {
+                "detail": "การจัดการข้อมูลและระบบสารสนเทศ",
+                "finding": "มีระบบการจัดการข้อมูลที่เหมาะสมและสามารถสอบกลับได้",
+                "reference": "เอกสารบันทึกการปฏิบัติงาน"
+              },
+              {
+                "detail": "การควบคุมคุณภาพและการประกันคุณภาพ (QA/QC)",
+                "finding": "มีการดำเนินการสอดคล้องตามแผนที่ระบุไว้ใน PDD",
+                "reference": "รายงานการติดตามผล (Monitoring Report)"
+              },
+              {
+                "detail": "ความสอดคล้องของพารามิเตอร์ที่ไม่ได้ตรวจวัด (Non-monitored parameters)",
+                "finding": "ใช้ค่าคงที่ตามที่กำหนดในเอกสารข้อเสนอโครงการและระเบียบวิธีการ",
+                "reference": "เอกสารข้อเสนอโครงการ (PDD)"
+              }
+            ],
+            "leadIn": "ตรวจสอบตามหลักเกณฑ์การรับรองปริมาณคาร์บอนเครดิต และตรวจสอบความสอดคล้องและความถูกต้องระเบียบวิธีการ T-VER-METH-WM-01 Version 06 ที่ใช้ในการคำนวณ โดยมีรายละเอียดดังต่อไปนี้"
+          },
+          "dataAndActivitiesVerification": "ผู้ทวนสอบได้ดำเนินการตรวจสอบเอกสาร บันทึกการปฏิบัติงาน รายงานการคำนวณ และสัมภาษณ์ผู้ที่เกี่ยวข้อง พบว่าข้อมูลที่ใช้ในการประเมินปริมาณการลดก๊าซเรือนกระจกมีความถูกต้อง ครบถ้วน และสามารถสอบกลับได้ตามมาตรฐาน"
+        },
+        "verificationStatement": "คณะผู้ทวนสอบขอรับรองว่า โครงการปรับปรุงระบบบำบัดน้ำเสียเพื่อนำไปผลิตก๊าซชีวภาพ โดย บริษัท ไทยอีสเทิร์น ไบโอ พาวเวอร์ จำกัด ได้ดำเนินการตรวจวัดและจัดทำรายงานตามหลักเกณฑ์ของ อบก. อย่างครบถ้วนและถูกต้องตามระเบียบวิธีการ T-VER-METH-WM-01 Version 06 โดยมีระบบการจัดการข้อมูลที่เชื่อถือได้ ปริมาณคาร์บอนเครดิตที่ขอรับรองในช่วงเวลาตั้งแต่วันที่ 1 เมษายน 2567 ถึง 31 มีนาคม 2568 ได้รับการตรวจสอบอย่างละเอียดและยืนยันความถูกต้องที่จำนวน 54,367 ตันคาร์บอนไดออกไซด์เทียบเท่า (tCO2e) โดยไม่มีข้อบกพร่องที่มีนัยสำคัญ",
+        "opportunitiesForImprovement": [
+          "ควรมีการสอบเทียบเครื่องมือวัดอัตราการไหลของน้ำเสียอย่างสม่ำเสมอตามแผนที่กำหนดเพื่อลดความคลาดเคลื่อนของการบันทึกข้อมูล",
+          "ควรพิจารณาติดตั้งระบบบันทึกข้อมูลแบบอัตโนมัติ (Data Logger) สำหรับการเก็บข้อมูลเพื่อเพิ่มประสิทธิภาพในการจัดการข้อมูล"
+        ]
+      },
+      "sourceFiles": [
+        {
+          "blobUrl": "https://vekocrmlnonprod.blob.core.windows.net/vekceroocrinput/gemini_text_file_2026-03-16-15-02-13-568205_f1cd7dab-d137-4c19-9cf4-4ae0cb751f10.jpg",
+          "fileName": "GHG calculation_CSV.csv"
+        }
+      ]
+    },
+    "uploadedFiles": {
+      "project_data": {
+        "fileName": "GHG calculation_CSV.csv",
+        "fileSize": 14191,
+        "mimeType": "text/csv",
+        "uploadedAt": "2026-03-16T08:04:38.971Z"
+      },
+      "monitoring_report": {
+        "fileName": "Monitoring Report (MR).pdf",
+        "fileSize": 1469038,
+        "mimeType": "application/pdf",
+        "uploadedAt": "2026-03-16T08:01:50.319Z"
+      },
+      "validation_report": {
+        "fileName": "Validation Report.pdf",
+        "fileSize": 2149348,
+        "mimeType": "application/pdf",
+        "uploadedAt": "2026-03-16T08:01:50.319Z"
+      }
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
+
+docs {
+  Replace ข้อมูล projectData ทั้งก้อน (full replace) สำหรับ project ที่ระบุ
+  
+  ⚠️ คำเตือน:
+  
+  ให้ดึงข้อมูล projectData จาก GET /auditor/project/:id ก่อน แล้วแก้ไขเฉพาะ value ที่ต้องการ
+  ห้ามแก้ชื่อ key — ต้องส่ง key เดิมกลับมาทุกตัว
+  ข้อมูลที่ส่งมาจะ replace ทั้งก้อน ถ้าขาด key ใดไป key นั้นจะหายจาก DB
+}
